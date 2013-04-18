@@ -1,0 +1,4 @@
+/* import stylesheets and hide from ie/mac \*/
+@import url("main.css");
+@import url("ie.css");
+/* end import/hide */

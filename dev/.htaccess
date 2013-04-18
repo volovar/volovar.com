@@ -1,0 +1,2 @@
+AuthName "Development"
+AuthUserFile "/home1/volovarc/.htpasswds/public_html/dev/passwd"
