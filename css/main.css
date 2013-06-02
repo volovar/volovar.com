@@ -452,6 +452,9 @@ a:focus {
 .link-list li .mid-btn.beh {
   background-position: 0 -90px;
 }
+.link-list li .mid-btn.vimeo .mid-btn-icon {
+  background-color: #1ab7ea;
+}
 .link-list:after {
   content: "";
   display: inline-block;
@@ -498,9 +501,11 @@ a:focus {
   background-position: 0 -45px;
 }
 .small-links li a.twitter:hover {
+  background-color: #00aced;
   background-position: right -45px;
 }
 .small-links li a.zerply:hover {
+  background-color: #9dbc7a;
   background-position: right 0;
 }
 .small-links li a.linkedin {
@@ -578,6 +583,7 @@ a:focus {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  outline: none;
 }
 .contact-form fieldset input:focus,
 .contact-form fieldset textarea:focus {
