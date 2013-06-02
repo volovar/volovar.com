@@ -152,6 +152,9 @@ body {
   background: #636c83 url("img/grid.png") 50% 0;
   background-color: rgba(185, 155, 111, 0.9);
 }
+em {
+  font-style: italic;
+}
 p {
   line-height: 1.5em;
   margin-bottom: 1.5em;
@@ -496,6 +499,12 @@ a:focus {
   background-color: #d15029;
   background-color: rgba(209, 80, 41, 0.9);
 }
+.small-links li a.dribbble {
+  background-position: 0 -228px;
+}
+.small-links li a.dribbble:hover {
+  background-position: -47px -228px;
+}
 .small-links li a.twitter {
   background-position: 0 -45px;
 }
@@ -797,6 +806,6 @@ a:focus {
   }
   .small-links li a {
     background-image: url("img/icons-2x.png");
-    background-size: 200%;
+    background-size: 90px;
   }
 }

@@ -453,7 +453,7 @@ function EducateQuotes($_) {
 		  (?=\\s | s\\b)  # otherwise, positive lookahead for a whitespace
 		)               # char or an 's' at a word ending position. This
 						# is a special case to handle something like:
-						# \"<i>Custer</i>'s Last Stand.\"
+						# \"<em>Custer</em>'s Last Stand.\"
 		}xi", '\1&#8217;', $_);
 
 	# Any remaining single quotes should be opening ones:

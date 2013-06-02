@@ -64,7 +64,7 @@ function show_error($myError)
 		<div class="wrap-inner">
 			<div class="header group">
 				<div class="logo">
-					<a href="/"><img src="/img/v-logo-lores.gif" alt="volovar.com" /><em>volovar.com</em></a>
+					<a href="/"><img src="/img/v-logo-lores.gif" alt="volovar.com" /><span>volovar.com</span></a>
 				</div>
 				<div class="nav">
 					<ul class="group">
@@ -118,9 +118,10 @@ function show_error($myError)
 			</div><!--/content-->
 			
 			<div class="footer group">
-				<p>Copyright &#169; 2011 Michael Volovar</p>
+				<p>Copyright &#169; 2013 Michael Volovar</p>
 				<ol class="small-links group">
-					<li><a class="twitter" href="https://twitter.com/#!/volovar"><span>Follow me on Twitter</span></a></li>
+                    <li><a class="dribbble" href="http://dribbble.com/volovar"><span>Dribbble!</span></a></li>
+            		<li><a class="twitter" href="https://twitter.com/#!/volovar"><span>Follow me on Twitter</span></a></li>
 					<li><a class="zerply" href="http://zerply.com/volovar/"><span>Zerply</span></a></li>
 					<li><a class="linkedin" href="http://www.linkedin.com/pub/michael-volovar/20/155/7b5"><span>LinkedIn</span></a></li>
 				</ol>
