@@ -415,7 +415,7 @@ a:focus {
   border-radius: 50%;
   border: none;
   overflow: hidden;
-  background: #000000 url(img/link_images.png) no-repeat 0 0;
+  background: #000000 url("img/link-images.png") no-repeat 0 0;
   position: relative;
 }
 .link-list li .mid-btn .mid-btn-icon {
@@ -449,8 +449,8 @@ a:focus {
 .link-list li .mid-btn.oddsends {
   background-position: 0 -270px;
 }
-.link-list li .mid-btn.beh {
-  background-position: 0 -90px;
+.link-list li .mid-btn.github {
+  background-position: 0 -91px;
 }
 .link-list li .mid-btn.vimeo .mid-btn-icon {
   background-color: #1ab7ea;
@@ -745,6 +745,9 @@ a:focus {
   .link-list li .highlight-btn.kidadmit {
     background-position: -15px -515px;
   }
+  .link-list li .highlight-btn.eurekatory {
+    background-position: -15px -715px;
+  }
   .link-list li .highlight-btn.cordially {
     background-position: -15px -115px;
   }
@@ -786,8 +789,8 @@ a:focus {
     background-size: 60px;
   }
   .external-links li .mid-btn a {
-    background-image: url("img/link_images-2x.png");
-    background-size: 100%;
+    background-image: url("img/link-images-2x.png");
+    background-size: 90px;
   }
   .small-links li a {
     background-image: url("img/icons-2x.png");
