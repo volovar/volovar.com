@@ -63,9 +63,11 @@ function show_error($myError)
 	<div class="wrap">
 		<div class="wrap-inner">
 			<div class="header group">
-				<div class="logo">
-					<a href="/"><img src="/img/v-logo-lores.gif" alt="volovar.com" /><span>volovar.com</span></a>
-				</div>
+				<a class="logo" href="/">
+                    <img src="/img/v-logo-lores.gif" alt="volovar.com" />
+                    <span class="logo-title">volovar.com</span>
+                </a>
+
 				<div class="nav">
 					<ul class="group">
 						<li><a href="/">Home</a></li>

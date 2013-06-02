@@ -12,18 +12,18 @@
     .logo {
         width: 20%;
     }
+
+    .logo-title {
+        display: none;
+    }
+
     .nav ul li {
         width: 20%;
     }
 
     .highlights li {
-        width: 45%;
-        margin-right: 4.5%;
+        width: 48%;
         margin-bottom: 15px;
-
-        &.right {
-            margin-right: 4.5%;
-        }
     }
 }
 
@@ -100,67 +100,53 @@
         margin: 0;
     }
 
-    .full img {
-        width: 100%;
-    }
-
     .contact-form {
         float: none;
         width: 82%;
         margin: 15px auto 0;
     }
 
-    .highlights li {
-        width: auto;
-        margin-right: 0;
-        float: none;
+    .link-list li {
+        width: 100%;
 
-        &.right {
-            margin-right: 0;
-        }
+        .highlight-btn {
+            height: 70px;
+            background: #fff url("img/btn-images.png") no-repeat -15px -15px;
 
-        .highlight {
-            height: 75px;
+            &.helium-foot {
+                background-position: -15px -615px;
+            }
 
-            a {
-                display: block;
-                width: 100%;
-                height: 75px;
-                background: #fff url(img/btn-images.jpg) no-repeat 0 -15px;
+            &.kidadmit {
+                background-position: -15px -515px;
+            }
 
-                &.js {
-                }
+            &.cordially {
+                background-position: -15px -115px;
+            }
 
-                &.cordially {
-                    background-position: 0 -115px;
-                }
+            &.aeo {
+                background-position: -15px -215px;
+            }
 
-                &.aeo {
-                    background-position: 0 -215px;
-                }
+            &.ccc {
+                background-position: -15px -315px;
+            }
 
-                &.ccc {
-                    background-position: 0 -315px;
-                }
+            &.dun-wel {
+                background-position: -15px -415px;
+            }
 
-                &.dun-wel {
-                    background-position: 0 -415px;
-                }
-
-                span {
-                    width: 96%;
-                }
+            img {
+                height: 0;
+                visibility: hidden;
             }
         }
 
-        .highlight-btn img {
-            height: 0;
-        }
     }
 
     .external-links li {
-        float: left;
-        width: 50%;
+        width: 49%;
     }
 
     .details {
