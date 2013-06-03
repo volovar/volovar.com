@@ -1,3 +1,6 @@
 #ignore intellij
 .idea
 .DS_store
+
+#site build output
+volovarCom_update/
