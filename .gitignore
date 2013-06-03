@@ -1,4 +1,4 @@
-#ignore intellij
+#ignore intellij + mac system files
 .idea
 .DS_store
 
