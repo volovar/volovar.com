@@ -149,8 +149,7 @@ body {
   font-size: 100%;
   font-family: calluna, Georgia, serif;
   color: #000;
-  background: #636c83 url("img/grid.png") 50% 0;
-  background-color: rgba(185, 155, 111, 0.9);
+  background: #b99b6f url("img/grid.png") 50% 0;
 }
 em {
   font-style: italic;
@@ -187,7 +186,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #d15029;
+  color: #d6613e;
   color: rgba(209, 80, 41, 0.9);
 }
 .left {
@@ -235,7 +234,7 @@ a:focus {
 }
 .logo:hover,
 .logo:active {
-  color: #d15029;
+  color: #d6613e;
   color: rgba(209, 80, 41, 0.9);
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
   background-position: bottom left;
@@ -268,7 +267,7 @@ a:focus {
 .nav ul li a:hover,
 .nav ul li a.active,
 .nav ul li a:focus {
-  color: #d15029;
+  color: #d6613e;
   color: rgba(209, 80, 41, 0.9);
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
 }
@@ -293,8 +292,9 @@ a:focus {
   padding: 15px 0;
   text-align: center;
   margin-bottom: 45px;
-  border-top: 2px solid rgba(0, 0, 0, 0.3);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  background: #555;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
@@ -312,7 +312,7 @@ a:focus {
 }
 .headline a:hover,
 .headline a:focus {
-  color: #d15029;
+  color: #d6613e;
   color: rgba(209, 80, 41, 0.9);
 }
 .col-one {
@@ -357,12 +357,12 @@ a:focus {
   margin-bottom: 30px;
 }
 .link-list li .highlight-btn {
-  background: #333;
+  background: #555;
   background: rgba(0, 0, 0, 0.4);
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  border: 15px solid #333;
+  border: 15px solid #555;
   border-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   color: rgba(255, 255, 255, 0.9);
@@ -377,7 +377,7 @@ a:focus {
   opacity: 0.5;
 }
 .link-list li .highlight-btn:hover span {
-  color: #d15029;
+  color: #d6613e;
 }
 .link-list li .highlight-btn span {
   display: block;
@@ -388,6 +388,7 @@ a:focus {
   width: 100%;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
+  text-align: start;
   text-indent: 15px;
   -moz-transition: color linear 0.2s;
   -ms-transition: color linear 0.2s;
@@ -395,56 +396,35 @@ a:focus {
   transition: color linear 0.2s;
 }
 .link-list li .highlight-btn img {
-  max-width: 100%;
+  display: block;
   margin: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  max-width: 100%;
   -moz-transition: opacity linear 0.2s;
   -ms-transition: opacity linear 0.2s;
   -webkit-transition: opacity linear 0.2s;
   transition: opacity linear 0.2s;
 }
 .link-list li .mid-btn {
-  display: block;
-  margin: 0 auto;
   width: 90px;
   height: 90px;
+  background: #000000 url("img/link-images.png") no-repeat 0 0;
+  border: none;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: none;
-  overflow: hidden;
-  background: #000000 url("img/link-images.png") no-repeat 0 0;
-  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999em;
+  -moz-transition: background-color linear 0.2s;
+  -ms-transition: background-color linear 0.2s;
+  -webkit-transition: background-color linear 0.2s;
+  transition: background-color linear 0.2s;
 }
-.link-list li .mid-btn .mid-btn-icon {
-  opacity: 0;
-  display: inline-block;
-  height: 52px;
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  padding-top: 38px;
-  background: #d15029;
-  -moz-transition: opacity linear 0.2s;
-  -ms-transition: opacity linear 0.2s;
-  -webkit-transition: opacity linear 0.2s;
-  transition: opacity linear 0.2s;
-  vertical-align: middle;
-  width: 100%;
-}
-.link-list li .mid-btn:hover span,
-.link-list li .mid-btn:active span {
-  opacity: 1;
+.link-list li .mid-btn:hover {
+  background-color: #d6613e;
 }
 .link-list li .mid-btn.fsl {
   background-position: 0 -180px;
-}
-.link-list li .mid-btn.fsl .mid-btn-icon {
-  height: 60px;
-  padding-top: 30px;
 }
 .link-list li .mid-btn.oddsends {
   background-position: 0 -270px;
@@ -452,7 +432,7 @@ a:focus {
 .link-list li .mid-btn.github {
   background-position: 0 -91px;
 }
-.link-list li .mid-btn.vimeo .mid-btn-icon {
+.link-list li .mid-btn.vimeo:hover {
   background-color: #1ab7ea;
 }
 .link-list:after {
@@ -476,55 +456,37 @@ a:focus {
   display: block;
   width: 45px;
   height: 45px;
+  background: #000000 url("img/icons.png") no-repeat 0 0;
   border: none;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: #000000 url("img/icons.png") no-repeat 0 0;
   -moz-transition: background-color linear 0.2s;
   -ms-transition: background-color linear 0.2s;
   -webkit-transition: background-color linear 0.2s;
   transition: background-color linear 0.2s;
 }
 .small-links li a:hover {
-  background-color: #d15029;
+  background-color: #d6613e;
   background-color: rgba(209, 80, 41, 0.9);
-}
-.small-links li a.dribbble {
-  background-position: 0 -228px;
 }
 .small-links li a.dribbble:hover {
   background-color: #ea4c89;
-  background-position: -47px -228px;
 }
 .small-links li a.twitter {
   background-position: 0 -45px;
 }
 .small-links li a.twitter:hover {
   background-color: #00aced;
-  background-position: right -45px;
+}
+.small-links li a.zerply {
+  background-position: 0 -135px;
 }
 .small-links li a.zerply:hover {
   background-color: #9dbc7a;
-  background-position: right 0;
 }
 .small-links li a.linkedin {
   background-position: 0 -90px;
-}
-.small-links li a.linkedin:hover {
-  background-position: right -90px;
-}
-.small-links li a.pdf {
-  background-position: 0 -135px;
-}
-.small-links li a.pdf:hover {
-  background-position: right -135px;
-}
-.small-links li a.txt {
-  background-position: 0 -180px;
-}
-.small-links li a.txt:hover {
-  background-position: right -180px;
 }
 .small-links li a span {
   display: none;
@@ -553,7 +515,7 @@ a:focus {
   color: #fff;
 }
 .details li a:hover {
-  color: #d15029;
+  color: #d6613e;
   color: rgba(209, 80, 41, 0.9);
 }
 .contact-form {
@@ -614,7 +576,7 @@ a:focus {
 .contact-form fieldset input[type="submit"]:focus .contact-form fieldset input[type="submit"]:active {
   color: #fff;
   cursor: pointer;
-  background: #d15029;
+  background: #d6613e;
   background: rgba(209, 80, 41, 0.9);
 }
 .emailError {
@@ -799,7 +761,7 @@ a:focus {
     background-image: url("img/v-logo-2x.png");
     background-size: 60px;
   }
-  .external-links li .mid-btn a {
+  .link-list li .mid-btn {
     background-image: url("img/link-images-2x.png");
     background-size: 90px;
   }

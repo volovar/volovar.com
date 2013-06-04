@@ -12,8 +12,7 @@ body {
     font-size: 100%;// 16px
     font-family: calluna, Georgia, serif;
     color: #000;
-    background: #636c83 url("img/grid.png") 50% 0;
-    background-color: rgba(185,155,111,0.9);
+    background: #b99b6f url("img/grid.png") 50% 0;
 }
 
 em {
@@ -50,7 +49,7 @@ a {
 
     &:hover,
     &:focus {
-        color: #d15029;
+        color: #d6613e;
         color: rgba(209,80,41,0.9);
     }
 }
@@ -109,7 +108,7 @@ a {
 
     &:hover,
     &:active {
-        color: #d15029;
+        color: #d6613e;
         color: rgba(209,80,41,0.9);
         text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
         background-position: bottom left;
@@ -149,7 +148,7 @@ a {
         &:hover,
         &.active,
         &:focus {
-            color: #d15029;
+            color: #d6613e;
             color: rgba(209,80,41,0.9);
             text-shadow: 0px 1px 0px rgba(0,0,0,0.6);
         }
@@ -184,8 +183,9 @@ a {
     padding: 15px 0;
     text-align: center;
     margin-bottom: 45px;
-    border-top: 2px solid rgba(0,0,0,0.3);
-    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    background: #555;
     background: rgba(0,0,0,0.5);
     color: #fff;
     text-shadow: 1px 2px 0px rgba(0,0,0,0.5);
@@ -205,7 +205,7 @@ a {
 
         &:hover,
         &:focus {
-            color: #d15029;
+            color: #d6613e;
             color: rgba(209,80,41,0.9);
         }
     }
@@ -261,10 +261,10 @@ a {
         margin-bottom: 30px;
 
         .highlight-btn {
-            background: #333;
+            background: #555;
             background: rgba(0,0,0,0.4);
             .border-radius(5px);
-            border: 15px solid #333;
+            border: 15px solid #555;
             border-color: rgba(0,0,0,0.4);
             color: #fff;
             color: rgba(255,255,255,0.9);
@@ -280,7 +280,7 @@ a {
                 }
 
                 span {
-                    color: #d15029;
+                    color: #d6613e;
                 }
             }
 
@@ -293,58 +293,36 @@ a {
                 width: 100%;
                 background-color: #000;
                 background-color: rgba(0,0,0,0.75);
+                text-align: start;
                 text-indent: 15px;
                 .transition(color linear .2s);
             }
 
             img {
-                max-width: 100%;
+                display: block;
                 margin: 0;
-                .border-radius(5px);
+                max-width: 100%;
                 .transition(opacity linear .2s);
             }
         }
 
         .mid-btn {
-            position: relative;
-            overflow: hidden;
-            display: block;
-            margin: 0 auto;
             width: 90px;
             height: 90px;
-            .border-radius(50%);
-            border: none;
-            overflow: hidden;
             background: #000 url("img/link-images.png") no-repeat 0 0;
-            position: relative;
+            border: none;
+            .border-radius(50%);
+            display: block;
+            margin: 0 auto;
+            text-indent: -9999em;
+            .transition(background-color linear .2s);
 
-            .mid-btn-icon {
-                opacity: 0;
-                display: inline-block;
-                height: 52px;
-                font-family: museo-sans, Helvetica, Arial, sans-serif;
-                text-transform: uppercase;
-                text-align: center;
-                color: #fff;
-                padding-top: 38px;
-                background: #d15029;
-                .transition(opacity linear .2s);
-                vertical-align: middle;
-                width: 100%;
-            }
-
-            &:hover span,
-            &:active span {
-                opacity: 1;
+            &:hover {
+                background-color: #d6613e;
             }
 
             &.fsl {
                 background-position: 0 -180px;
-
-                .mid-btn-icon {
-                    height: 60px;
-                    padding-top: 30px;
-                }
             }
 
             &.oddsends {
@@ -355,10 +333,8 @@ a {
                 background-position: 0 -91px;
             }
 
-            &.vimeo {
-                .mid-btn-icon {
-                    background-color: #1ab7ea;
-                }
+            &.vimeo:hover {
+                background-color: #1ab7ea;
             }
         }
     }
@@ -390,22 +366,19 @@ a {
             display: block;
             width: 45px;
             height: 45px;
+            background: #000 url("img/icons.png") no-repeat 0 0;
             border: none;
             .border-radius(50%);
-            background: #000 url("img/icons.png") no-repeat 0 0;
             .transition(background-color linear .2s);
 
             &:hover {
-                background-color: #d15029;
+                background-color: #d6613e;
                 background-color: rgba(209,80,41,0.9);
             }
 
             &.dribbble {
-                background-position: 0 -228px;
-
                 &:hover {
                     background-color: #ea4c89;
-                    background-position: -47px -228px;
                 }
             }
 
@@ -414,37 +387,19 @@ a {
 
                 &:hover {
                     background-color: #00aced;
-                    background-position: right -45px;
                 }
             }
 
-            &.zerply:hover {
-                background-color: #9dbc7a;
-                background-position: right 0;
+            &.zerply {
+                background-position: 0 -135px;
+
+                &:hover {
+                    background-color: #9dbc7a;
+                }
             }
 
             &.linkedin {
                 background-position: 0 -90px;
-
-                &:hover {
-                    background-position: right -90px;
-                }
-            }
-
-            &.pdf {
-                background-position: 0 -135px;
-
-                &:hover {
-                    background-position: right -135px;
-                }
-            }
-
-            &.txt {
-                background-position: 0 -180px;
-
-                &:hover {
-                    background-position: right -180px;
-                }
             }
 
             span {
@@ -477,7 +432,7 @@ a {
             color: #fff;
 
             &:hover {
-                color: #d15029;
+                color: #d6613e;
                 color: rgba(209,80,41,0.9);
             }
         }
@@ -543,7 +498,7 @@ a {
             &:active {
                 color: #fff;
                 cursor: pointer;
-                background: #d15029;
+                background: #d6613e;
                 background: rgba(209,80,41,0.9);
             }
         }
