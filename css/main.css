@@ -164,7 +164,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
+  font-family: museo-sans, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5em;
   text-transform: uppercase;
 }
@@ -227,7 +227,7 @@ a:focus {
   font-size: 1.25em;
   font-weight: 500;
   text-transform: uppercase;
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
+  font-family: museo-sans, "Helvetica Neue", Arial, sans-serif;
   color: #000;
   color: rgba(0, 0, 0, 0.85);
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0);
@@ -255,7 +255,7 @@ a:focus {
   display: block;
   font-size: 1.125em;
   line-height: 1.125em;
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
+  font-family: museo-sans, "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -532,7 +532,7 @@ a:focus {
 }
 .contact-form fieldset label {
   display: block;
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
+  font-family: museo-sans, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
 }
 .contact-form fieldset input,
@@ -565,7 +565,7 @@ a:focus {
   height: 30px;
   padding: 3px 7px;
   float: right;
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
+  font-family: museo-sans, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
@@ -585,7 +585,7 @@ a:focus {
 }
 .correction {
   color: red;
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
+  font-family: museo-sans, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
   margin-bottom: 15px;
   font-size: 0.9em;
