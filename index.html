@@ -7,6 +7,8 @@
 <title>Volovar.com</title>
 
 <link rel="stylesheet" type="text/css" media="screen, projection" href="/css/main.css" />
+<script src="//yui.yahooapis.com/3.10.1/build/yui/yui-min.js"></script>
+
 <script type="text/javascript" src="http://use.typekit.com/pla7tgp.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <script type="text/javascript">
@@ -25,28 +27,29 @@
 </head>
 
 <body>
+    <div class="header" id="navigationHeader">
+        <button class="nav" id="navButton">
+            <img src="/img/v-logo-lores.gif" alt="volovar.com" />
+            <span class="logo-icon">
+                <span class="logo-title left-title">michael</span>
+                <span class="logo-title right-title">volovar</span>
+            </span>
+        </button>
+
+        <!--<ul class="nav">-->
+            <!--<li><a class="active" href="/">Home</a></li>-->
+            <!--<li><a href="/work.html">Work</a></li>-->
+            <!--<li><a href="/about.html">About</a></li>-->
+        <!--</ul>-->
+    </div>
+
 	<div class="wrap">
+        <div class="headline">
+            <h1>Carefully Crafted Code</h1>
+            <h2>Delivered direct from Chicago, IL</h2>
+        </div>
+
 		<div class="wrap-inner">
-            <div class="header group">
-                <a class="logo" href="/">
-                    <img src="/img/v-logo-lores.gif" alt="volovar.com" />
-                    <span class="logo-title">volovar.com</span>
-                </a>
-
-                <div class="nav">
-                    <ul class="group">
-                        <li><a class="active" href="/">Home</a></li>
-                        <li><a href="/work.html">Work</a></li>
-                        <li><a href="/about.html">About</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="headline">
-                <h1>Carefully Crafted Code</h1>
-                <h2>Delivered direct from Chicago, IL</h2>
-            </div>
-
             <div class="content">
                 <div class="column">
                     <p class="intro">Hello! I'm a web designer who crafts handmade sites delivered right to your url. What do you want built? Take a look at some of my <a href="/work.html">work</a> and when you're ready, <a href="/about.html">contact me.</a></p>
@@ -89,6 +92,42 @@
             </div>
         </div>
     </div>
+    <script>
+        YUI().use(['node', 'node-style', 'event', 'event-tap'], function(Y) {
+            var navButton = Y.one('#navButton'),
+                navHeader = Y.one('#navigationHeader'),
+                body = Y.one('body');
+
+            navButton.on('click', function(e) {
+                var windowHeight = Y.one('window').get('winHeight');
+
+                if(navHeader.getStyle('height') == '70px') {
+                    navHeader.setStyle('height', windowHeight);
+                    navHeader.addClass('open');
+                    body.setStyle('overflow', 'hidden');
+
+                } else {
+                    navHeader.setStyle('height', '70px');
+                    navHeader.removeClass('open');
+                    body.setStyle('overflow', 'auto');
+                }
+                e.stopPropagation();
+            });
+
+            Y.one('window').on('resize', function(e) {
+                var windowHeight = Y.one('window').get('winHeight');
+
+                Y.log(windowHeight);
+                if(navHeader.hasClass('open')) {
+                    Y.log('class!');
+                    navHeader.setStyle('height', windowHeight);
+//                    navHeader.setStyle(['transition', 'none', 'height', windowHeight]);
+                } else {
+                    Y.log('no class!');
+                }
+            });
+        });
+    </script>
 </body>
 <!--|^|/-->
 </html>
