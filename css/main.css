@@ -554,7 +554,7 @@ a:focus {
 }
 .contact-form fieldset label {
   display: block;
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
+  font-family: museo-sans, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
 }
 .contact-form fieldset input,
@@ -587,7 +587,7 @@ a:focus {
   height: 30px;
   padding: 3px 7px;
   float: right;
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
+  font-family: museo-sans, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
@@ -607,7 +607,7 @@ a:focus {
 }
 .correction {
   color: red;
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
+  font-family: museo-sans, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
   margin-bottom: 15px;
   font-size: 0.9em;
