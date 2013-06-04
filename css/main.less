@@ -90,14 +90,14 @@ a {
 .header {
     background: rgba(0,0,0,0.8);
     position: absolute;
+    overflow: hidden;
     top: 0;
     width: 100%;
-    -moz-user-select: none;
-    -khtml-user-select: none;
+    height: 70px;
     .transition(height ease .6s);
     z-index: 1;
 }
-.nav {
+.nav-button {
     background-color: #000;
     border: none;
     color: #fff;
@@ -153,36 +153,20 @@ a {
     padding-left: 4em;
 }
 
-//
-// navigation
-//
-//.nav li {
-//    width: 16.65%; // 150px;
-//    float: left;
-//    margin-top: 22px;
-//
-//    a {
-//        display: block;
-//        font-size: 1.125em;
-//        line-height: 1.125em;
-//        font-family: museo-sans, Helvetica, Arial, sans-serif;
-//        font-weight: 500;
-//        letter-spacing: 1px;
-//        text-transform: uppercase;
-//        color: #000;
-//        color: rgba(0,0,0,0.85);
-//        border: none;
-//        text-shadow: 0px 1px 0px rgba(0,0,0,0);
-//
-//        &:hover,
-//        &.active,
-//        &:focus {
-//            color: #d6613e;
-//            color: rgba(209,80,41,0.9);
-//            text-shadow: 0px 1px 0px rgba(0,0,0,0.6);
-//        }
-//    }
-//}
+.nav {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 80%;
+
+    li {
+        a {
+            background: #fff;
+            border: none;
+            display: block;
+            padding: 15px 20px;
+        }
+    }
+}
 
 //
 //content
@@ -281,7 +265,6 @@ a {
 // work detail links
 //
 .link-list {
-    margin: 15px 0;
     text-align: justify;
 
     li {
@@ -373,6 +356,10 @@ a {
         display: inline-block;
         width: 100%;
     }
+}
+
+.highlight-list {
+    margin: 15px 0;
 }
 
 .external-links li {

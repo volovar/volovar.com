@@ -216,17 +216,17 @@ a:focus {
 .header {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
+  overflow: hidden;
   top: 0;
   width: 100%;
-  -moz-user-select: none;
-  -khtml-user-select: none;
+  height: 70px;
   -moz-transition: height ease 0.6s;
   -ms-transition: height ease 0.6s;
   -webkit-transition: height ease 0.6s;
   transition: height ease 0.6s;
   z-index: 1;
 }
-.nav {
+.nav-button {
   background-color: #000;
   border: none;
   color: #fff;
@@ -245,11 +245,11 @@ a:focus {
   transition: background-color linear 0.2s;
   width: 100%;
 }
-.nav:hover,
-.nav:active {
+.nav-button:hover,
+.nav-button:active {
   background-color: #d6613e;
 }
-.nav img {
+.nav-button img {
   height: 0;
 }
 .logo-icon {
@@ -279,6 +279,17 @@ a:focus {
 .right-title {
   left: 0;
   padding-left: 4em;
+}
+.nav {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 80%;
+}
+.nav li a {
+  background: #fff;
+  border: none;
+  display: block;
+  padding: 15px 20px;
 }
 .content {
   position: relative;
@@ -357,7 +368,6 @@ a:focus {
   width: 100%;
 }
 .link-list {
-  margin: 15px 0;
   text-align: justify;
 }
 .link-list li {
@@ -448,6 +458,9 @@ a:focus {
   content: "";
   display: inline-block;
   width: 100%;
+}
+.highlight-list {
+  margin: 15px 0;
 }
 .external-links li {
   width: 24%;
