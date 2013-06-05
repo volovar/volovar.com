@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<title>Volovar.com / About</title>
+<title>Volovar.com | About</title>
 
 <link rel="stylesheet" type="text/css" media="screen, projection" href="/css/main.css" />
 <script type="text/javascript" src="http://use.typekit.com/pla7tgp.js"></script>
@@ -35,43 +35,44 @@
                     <span class="logo-title">volovar.com</span>
                 </a>
 
-				<div class="nav">
-					<ul class="group">
+                <div class="nav">
+                    <ul class="group">
 						<li><a href="/">Home</a></li>
 						<li><a href="/work.html">Work</a></li>
 						<li><a class="active" href="/about.html">About</a></li>
 					</ul>
-				</div><!--/nav-->
-			</div><!--/header-->
+				</div>
+			</div>
 			<div class="headline">
 				<h1>Information Center</h1>
 				<h2>Orders, Inquiries, and General Info</h2>
-			</div><!--/headline-->
+			</div>
+
 			<div class="content group">
 				<div class="column">
 					<p class="intro">All of our sites are created to your specifications and delivered in a timely manner. Use the handy form on this page to begin the order process, send an inquiry, or just say hi. If you're still unsure of what you want, check out some of the other <a href="/work.html">other things I've made</a></p>
-					<p>If you're interested in a good old fashioned resume, <a href="/resume/resume.html">click here</a></p>
+					<p class="intro">If you're interested in a good old fashioned resume, <a href="/resume/resume.html">click here</a></p>
 				</div>
 				<div class="column">
 					<form name="main-form" class="contact-form group" id="contact" action="/about.php" method="POST">
 						<fieldset>
 							<label for="name">Name</label>
-							<input type="text" name="name" /> 
+							<input id="name" type="text" name="name" />
 					    </fieldset>
 					    									    
 					    <fieldset>
 					    	<label for="email">Email<em id="emailError" class="emailError"> &#42;Required</em></label>
-					        <input type="email" name="email" onChange="validateEmail()" autocorrect="off" autocapitalize="off" />
+					        <input id="email" type="email" name="email" onChange="validateEmail()" />
 					    </fieldset>
 					    
 					    <fieldset>
 					    	<label for="phone">Phone</label>
-							<input type="tel" name="phone" />
+							<input id="phone" type="tel" name="phone" />
 					    </fieldset>
 					    			    
 					    <fieldset>
 					    	<label for="body">Message</label>
-							<textarea name="body" rows="5" cols="28" ></textarea>
+							<textarea id="body" name="body" rows="5" cols="28" ></textarea>
 					    </fieldset>
 					    
 					    <fieldset>
@@ -79,23 +80,23 @@
 					    </fieldset>
 					</form>
 				</div>
-			</div><!--/content-->
+			</div>
 			<!--<div class="full">
 				<h3>A little something about the creator</h3>
 				<p></p>
 			</div>-->
-			
-			<div class="footer group">
-				<p>Copyright &#169; 2013 Michael Volovar</p>
-				<ol class="small-links group">
+
+            <div class="footer group">
+                <p>Copyright &#169; 2013 Michael Volovar</p>
+                <ul class="small-links group">
                     <li><a class="dribbble" href="http://dribbble.com/volovar"><span>Dribbble!</span></a></li>
                     <li><a class="twitter" href="https://twitter.com/#!/volovar"><span>Follow me on Twitter</span></a></li>
-					<li><a class="zerply" href="http://zerply.com/volovar/"><span>Zerply</span></a></li>
-					<li><a class="linkedin" href="http://www.linkedin.com/pub/michael-volovar/20/155/7b5"><span>LinkedIn</span></a></li>
-				</ol>
-			</div><!--/footer-->
-		</div>
-	</div><!--/wrap-->
+                    <li><a class="zerply" href="http://zerply.com/volovar/"><span>Zerply</span></a></li>
+                    <li><a class="linkedin" href="http://www.linkedin.com/pub/michael-volovar/20/155/7b5"><span>LinkedIn</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
-<!--|/.-->
+<!--|/-->
 </html>
