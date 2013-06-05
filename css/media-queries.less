@@ -1,22 +1,14 @@
 @media all {
     .wrap {
         width: auto;
-        max-width: 960px;
-    }
-    .logo a em {
-        display: none;
+
+        .wrap-inner {
+            max-width: 1200px;
+        }
     }
 }
 
 @media (max-width: 720px) {
-    .logo {
-        width: 20%;
-    }
-
-    .logo-title {
-        display: none;
-    }
-
     .nav ul li {
         width: 20%;
     }
@@ -27,21 +19,6 @@
     }
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
-    h1, h2, h3, h4, h5, h6 {
-        line-height: 1.25em;
-    }
-
-    .full img {
-        margin-bottom: 15px;
-    }
-
-    .details {
-        position: inherit;
-        width: auto;
-    }
-}
-
 @media (min-width: 200px) and (max-width: 600px) {
     .wrap .wrap-inner {
         padding: 0;
@@ -49,22 +26,6 @@
 
     .min-height {
         min-height: inherit;
-    }
-
-    .header {
-        padding-top: 8px;
-    }
-
-    .logo {
-        float: none;
-        height: 60px;
-        width: 60px;
-        margin: 0 auto 10px;
-
-        a {
-            float: none;
-            display: block;
-        }
     }
 
     .headline h2 a {
@@ -108,45 +69,6 @@
 
     .link-list li {
         width: 100%;
-
-        .highlight-btn {
-            height: 70px;
-            background: #fff url("img/btn-images.png") no-repeat -15px -15px;
-
-            &.helium-foot {
-                background-position: -15px -615px;
-            }
-
-            &.kidadmit {
-                background-position: -15px -515px;
-            }
-
-            &.eurekatory {
-                background-position: -15px -715px;
-            }
-
-            &.cordially {
-                background-position: -15px -115px;
-            }
-
-            &.aeo {
-                background-position: -15px -215px;
-            }
-
-            &.ccc {
-                background-position: -15px -315px;
-            }
-
-            &.dun-wel {
-                background-position: -15px -415px;
-            }
-
-            img {
-                height: 0;
-                visibility: hidden;
-            }
-        }
-
     }
 
     .external-links li {
@@ -164,15 +86,28 @@
     }
 }
 
-@media (min-width: 721px) {
-    .logo a em {
-        display: inline;
+@media (min-width: 200px) and (max-width: 480px) {
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.25em;
+    }
+
+    .full img {
+        margin-bottom: 15px;
+    }
+
+    .details {
+        position: inherit;
+        width: auto;
+    }
+
+    .logo-title {
+        display: none;
     }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-    .logo a {
-        background-image: url("img/v-logo-2x.png");
+    .logo {
+        background-image: url("img/logo-2x.png");
         background-size: 60px;
     }
     .link-list li .mid-btn {

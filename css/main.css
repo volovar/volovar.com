@@ -147,10 +147,10 @@ table {
 body {
   min-width: 100%;
   font-size: 100%;
-  font-family: calluna, Georgia, serif;
+  font-family: calluna, Georgia, "Times New Roman", serif;
   color: #000;
   background: #b99b6f url("img/grid.png") 50% 0;
-  padding-top: 70px;
+  height: 100%;
 }
 em {
   font-style: italic;
@@ -204,11 +204,11 @@ a:focus {
   margin: 0 auto;
   background: #ede4d8;
   background: rgba(255, 255, 255, 0.7);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
+  padding-top: 70px;
 }
 .wrap .wrap-inner {
   padding: 0 30px;
+  margin: 0 auto;
 }
 .min-height {
   min-height: 480px;
@@ -224,7 +224,7 @@ a:focus {
   -ms-transition: height ease 0.6s;
   -webkit-transition: height ease 0.6s;
   transition: height ease 0.6s;
-  z-index: 1;
+  z-index: 10;
 }
 .nav-button {
   background-color: #000;
@@ -245,14 +245,13 @@ a:focus {
   transition: background-color linear 0.2s;
   width: 100%;
 }
-.nav-button:hover,
-.nav-button:active {
+.nav-button.active {
   background-color: #d6613e;
 }
 .nav-button img {
   height: 0;
 }
-.logo-icon {
+.logo {
   background: url("img/logo.png") no-repeat 50% 50%;
   display: block;
   height: 70px;
@@ -417,7 +416,7 @@ a:focus {
 .link-list li .highlight-btn img {
   display: block;
   margin: 0;
-  max-width: 100%;
+  width: 100%;
   -moz-transition: opacity linear 0.2s;
   -ms-transition: opacity linear 0.2s;
   -webkit-transition: opacity linear 0.2s;
@@ -458,6 +457,12 @@ a:focus {
   content: "";
   display: inline-block;
   width: 100%;
+}
+.shot-list li {
+  margin-right: 3.5%;
+}
+.shot-list li.last {
+  margin-right: 0;
 }
 .highlight-list {
   margin: 15px 0;
@@ -560,7 +565,7 @@ a:focus {
 .contact-form fieldset input,
 .contact-form fieldset textarea {
   width: 100%;
-  font: 1em calluna, Georgia, serif;
+  font: 1em calluna, Georgia, "Times New Roman", serif;
   padding: 7px;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -622,6 +627,9 @@ a:focus {
   float: left;
   margin-top: 12px;
 }
+.typekit-badge {
+  z-index: 5 !important;
+}
 * html #selector {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='img/image.png');
   background-image: none;
@@ -637,19 +645,12 @@ a:focus {
 @media all {
   .wrap {
     width: auto;
-    max-width: 960px;
   }
-  .logo a em {
-    display: none;
+  .wrap .wrap-inner {
+    max-width: 1200px;
   }
 }
 @media (max-width: 720px) {
-  .logo {
-    width: 20%;
-  }
-  .logo-title {
-    display: none;
-  }
   .nav ul li {
     width: 20%;
   }
@@ -658,42 +659,12 @@ a:focus {
     margin-bottom: 15px;
   }
 }
-@media (min-width: 200px) and (max-width: 480px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    line-height: 1.25em;
-  }
-  .full img {
-    margin-bottom: 15px;
-  }
-  .details {
-    position: inherit;
-    width: auto;
-  }
-}
 @media (min-width: 200px) and (max-width: 600px) {
   .wrap .wrap-inner {
     padding: 0;
   }
   .min-height {
     min-height: inherit;
-  }
-  .header {
-    padding-top: 8px;
-  }
-  .logo {
-    float: none;
-    height: 60px;
-    width: 60px;
-    margin: 0 auto 10px;
-  }
-  .logo a {
-    float: none;
-    display: block;
   }
   .headline h2 a {
     display: block;
@@ -730,35 +701,6 @@ a:focus {
   .link-list li {
     width: 100%;
   }
-  .link-list li .highlight-btn {
-    height: 70px;
-    background: #ffffff url("img/btn-images.png") no-repeat -15px -15px;
-  }
-  .link-list li .highlight-btn.helium-foot {
-    background-position: -15px -615px;
-  }
-  .link-list li .highlight-btn.kidadmit {
-    background-position: -15px -515px;
-  }
-  .link-list li .highlight-btn.eurekatory {
-    background-position: -15px -715px;
-  }
-  .link-list li .highlight-btn.cordially {
-    background-position: -15px -115px;
-  }
-  .link-list li .highlight-btn.aeo {
-    background-position: -15px -215px;
-  }
-  .link-list li .highlight-btn.ccc {
-    background-position: -15px -315px;
-  }
-  .link-list li .highlight-btn.dun-wel {
-    background-position: -15px -415px;
-  }
-  .link-list li .highlight-btn img {
-    height: 0;
-    visibility: hidden;
-  }
   .external-links li {
     width: 49%;
   }
@@ -773,14 +715,29 @@ a:focus {
     width: 100%;
   }
 }
-@media (min-width: 721px) {
-  .logo a em {
-    display: inline;
+@media (min-width: 200px) and (max-width: 480px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.25em;
+  }
+  .full img {
+    margin-bottom: 15px;
+  }
+  .details {
+    position: inherit;
+    width: auto;
+  }
+  .logo-title {
+    display: none;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
-  .logo a {
-    background-image: url("img/v-logo-2x.png");
+  .logo {
+    background-image: url("img/logo-2x.png");
     background-size: 60px;
   }
   .link-list li .mid-btn {

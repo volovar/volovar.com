@@ -3,24 +3,33 @@ YUI().use(['node', 'node-style', 'event', 'event-tap'], function(Y) {
         navHeader = Y.one('#navigationHeader'),
         body = Y.one('body');
 
+    function addNavHeight(heightAdd, display, addRemove) {
+        navHeader.setStyle('height', heightAdd);
+
+        if(addRemove) {
+            navHeader.addClass('open');
+            navButton.addClass('active');
+        } else {
+            navHeader.removeClass('open');
+            navButton.removeClass('active');
+        }
+
+        body.setStyle('overflow', display);
+    }
+
     navButton.on('tap', function(e) {
         var windowHeight = Y.one('window').get('winHeight'),
             bodyHeight = body.get('offsetHeight'),
             navHeight = navHeader.getStyle('height');
 
         if(navHeight == '70px' && windowHeight > bodyHeight) {
-            navHeader.setStyle('height', windowHeight);
-            navHeader.addClass('open');
-            body.setStyle('overflow', 'hidden');
+            addNavHeight(windowHeight, 'hidden', true);
         } else if(navHeight == '70px' && windowHeight < bodyHeight) {
-            navHeader.setStyle('height', bodyHeight);
-            navHeader.addClass('open');
-            body.setStyle('overflow', 'hidden');
+            addNavHeight(bodyHeight, 'hidden', true);
         } else {
-            navHeader.setStyle('height', '70px');
-            navHeader.removeClass('open');
-            body.setStyle('overflow', 'auto');
+            addNavHeight('70px', 'auto', false);
         }
+
         e.stopPropagation();
     });
 
