@@ -347,6 +347,12 @@ a:focus {
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
   width: 100%;
 }
+.section {
+  margin-bottom: 30px;
+}
+.section-title {
+  font-size: 1.25em;
+}
 .link-list {
   margin: 15px 0;
   text-align: justify;
@@ -439,6 +445,11 @@ a:focus {
   content: "";
   display: inline-block;
   width: 100%;
+}
+.text-list li {
+  display: block;
+  margin-bottom: 5px;
+  width: auto;
 }
 .external-links li {
   width: 24%;
