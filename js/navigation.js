@@ -58,6 +58,6 @@ YUI().use(['node', 'node-style', 'event', 'event-tap'], function(Y) {
     });
 
     Y.one('.nav').on('focus', function(e) {
-        addNavHeight(Y.one('window').get('winHeight'), true);
+        addNavHeight(Y.one('window').get('winHeight') - buttonHeight, true);
     });
 });

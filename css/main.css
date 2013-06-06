@@ -243,8 +243,15 @@ a:focus {
   background: #fff;
   color: #333;
 }
+.nav-button:focus .logo,
+.nav-button.hover .logo {
+  background-position: 50% -54px;
+}
 .nav-button.active {
   background-color: #d6613e;
+}
+.nav-button.active .logo {
+  background-position: 50% 6px;
 }
 .nav-button.active:focus,
 .nav-button.active.hover {
@@ -255,7 +262,7 @@ a:focus {
   height: 0;
 }
 .logo {
-  background: url("img/logo.png") no-repeat 50% 50%;
+  background: url("img/logo.png") no-repeat 50% 6px;
   display: block;
   height: 70px;
   width: 70px;

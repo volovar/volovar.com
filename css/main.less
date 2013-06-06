@@ -115,11 +115,19 @@ a {
     &.hover {
         background: #fff;
         color: #333;
+
+        .logo {
+            background-position: 50% -54px;
+        }
     }
 
     &.active {
         background-color: #d6613e;
 //        background-color: rgba(209,80,41,0.9);
+
+        .logo {
+            background-position: 50% 6px;
+        }
 
         &:focus,
         &.hover {
@@ -134,7 +142,7 @@ a {
 }
 
 .logo {
-    background: url("img/logo.png") no-repeat 50% 50%;
+    background: url("img/logo.png") no-repeat 50% 6px;
     display: block;
     height: 70px;
     width: 70px;
