@@ -75,7 +75,7 @@ function show_error($myError)
         <div class="nav-header" id="navigationHeader">
             <ul class="nav link-list">
                 <li><a class="active" href="/">Home</a></li>
-                <li><a href="/work.html">Projects</a></li>
+                <li><a href="/projects.html">Projects</a></li>
                 <li><a href="/about.html">About</a></li>
             </ul>
         </div>
@@ -90,7 +90,7 @@ function show_error($myError)
         <div class="wrap-inner">
             <div class="content group">
 				<div class="column">
-					<p class="intro">All of our sites are created to your specifications and delivered in a timely manner. Use the handy form on this page to begin the order process, send an inquiry, or just say hi. If you're still unsure of what you want, check out some of the other <a href="/work.html">other things I've made</a></p>
+					<p class="intro">All of our sites are created to your specifications and delivered in a timely manner. Use the handy form on this page to begin the order process, send an inquiry, or just say hi. If you're still unsure of what you want, check out some of the other <a href="/projects.html">other things I've made</a></p>
 					<p>If you're interested in a good old fashioned resume, <a href="/resume/resume.html">click here</a></p>
 				</div>
 
