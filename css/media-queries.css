@@ -1,5 +1,5 @@
-NameError: .border-radius is undefined in /Users/Michael/Development/volovarCom_update/css/media-queries.less:79:8
-78     .details {
-79         .border-radius(15px);
-80     }
+NameError: .border-radius is undefined in /Users/Michael/Development/volovarCom_update/css/media-queries.less:87:8
+86     .details {
+87         .border-radius(15px);
+88     }
 
