@@ -44,12 +44,10 @@ function show_error($myError)
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <title>Volovar.com | About</title>
 
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" media="screen, projection" href="/css/main.css" />
 
     <script src="//yui.yahooapis.com/3.10.1/build/yui/yui-min.js"></script>
-    <script type="text/javascript" src="http://use.typekit.com/pla7tgp.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script src="/js/contact_valid.js" type="text/javascript"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-8392296-1']);
@@ -73,74 +71,95 @@ function show_error($myError)
             </span>
         </button>
 
-        <div class="nav-header" id="navigationHeader">
-            <ul class="nav link-list">
-                <li><a class="active" href="/">Home</a></li>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/about.html">About</a></li>
+        <div class="nav-header" id="navHeader">
+            <ul class="nav" id="navContents">
+                <li>
+                    <a href="/" class="headline active">
+                        <h1>Carefully Crafted Code</h1>
+                        <h2>Delivered direct from Chicago, IL</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="/projects.html" class="headline">
+                        <h1>Project Warehouse</h1>
+                        <h2>A backlog of the things I've crafted</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="/about.html" class="headline">
+                        <h1>Information Center</h1>
+                        <h2>Orders, Inquiries, and General Info</h2>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 
-	<div class="wrap">
-        <div class="headline">
-            <h1>Information Center</h1>
-            <h2>Orders, Inquiries, and General Info</h2>
-        </div>
-
+    <div class="wrap">
         <div class="wrap-inner">
+            <div class="headline">
+                <h1>Information Center</h1>
+                <h2>Orders, Inquiries, and General Info</h2>
+            </div>
+
             <div class="content group">
-				<div class="column">
-					<p class="intro">All of our sites are created to your specifications and delivered in a timely manner. Use the handy form on this page to begin the order process, send an inquiry, or just say hi. If you're still unsure of what you want, check out some of the other <a href="/projects.html">other things I've made</a></p>
-					<p>If you're interested in a good old fashioned resume, <a href="/resume/resume.html">click here</a></p>
-				</div>
+				<div class="full">
+                    <div class="column">
+                        <p class="intro">All of our sites are created to your specifications and delivered in a timely manner. Use the handy form on this page to begin the order process, send an inquiry, or just say hi. If you're still unsure of what you want, check out some of the other <a href="/projects.html">other things I've made</a></p>
+                        <p>If you're interested in a good old fashioned resume, <a href="/resume/resume.html">click here</a></p>
+                    </div>
 
-				<div class="column">
+                    <div class="column">
 					<p class="correction">&#42; Please correct the following error: <?php echo $myError; ?></p>
-					<form name="main-form" class="contact-form group" id="contact" action="/about.php" method="POST">
-						<fieldset>
-							<label for="name">Name</label>
-							<input id="name" type="text" name="name" />
-					    </fieldset>
-					    									    
-					    <fieldset>
-					    	<label for="email">Email<em id="emailError" class="emailError"> &#42;Required</em></label>
-					        <input id="email" type="email" name="email" onChange="validateEmail()" />
-					    </fieldset>
-					    
-					    <fieldset>
-					    	<label for="phone">Phone</label>
-							<input id="phone" type="tel" name="phone" />
-					    </fieldset>
-					    			    
-					    <fieldset>
-					    	<label for="body">Message</label>
-							<textarea id="body" name="body" rows="5" cols="28" ></textarea>
-					    </fieldset>
-					    
-					    <fieldset>
-							<input type="submit" value="send" />
-					    </fieldset>
-					</form>
-				</div>
-			</div><!--/content-->
-			<!--<div class="full">
-				<h3>A little something about the creator</h3>
-				<p></p>
-			</div>-->
+                        <form name="main-form" class="contact-form group" id="contact" action="/about.php" method="POST">
+                            <fieldset>
+                                <label for="name">Name</label>
+                                <input id="name" type="text" name="name" />
+                            </fieldset>
 
-			<div class="footer group">
-				<p>Copyright &#169; 2013 Michael Volovar</p>
-				<ul class="small-links group">
-                    <li><a class="dribbble" href="http://dribbble.com/volovar"><span>Dribbble!</span></a></li>
-                    <li><a class="twitter" href="https://twitter.com/#!/volovar"><span>Follow me on Twitter</span></a></li>
-					<li><a class="zerply" href="http://zerply.com/volovar/"><span>Zerply</span></a></li>
-					<li><a class="linkedin" href="http://www.linkedin.com/pub/michael-volovar/20/155/7b5"><span>LinkedIn</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+                            <fieldset>
+                                <label for="email">Email<em id="emailError" class="emailError"> &#42;Required</em></label>
+                                <input id="email" type="email" name="email" onChange="validateEmail()" />
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="phone">Phone</label>
+                                <input id="phone" type="tel" name="phone" />
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="body">Message</label>
+                                <textarea id="body" name="body" rows="5" cols="28" ></textarea>
+                            </fieldset>
+
+                            <fieldset>
+                                <input type="submit" value="send" />
+                            </fieldset>
+                        </form>
+                    </div>
+			    </div>
+                <!--<div class="full">
+                    <h3>A little something about the creator</h3>
+                    <p></p>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer group">
+        <div class="footer-inner">
+            <p>Copyright &#169; 2013 Michael Volovar</p>
+            <ul class="small-links group">
+                <li><a class="dribbble" href="http://dribbble.com/volovar"><span>Dribbble!</span></a></li>
+                <li><a class="twitter" href="https://twitter.com/#!/volovar"><span>Follow me on Twitter</span></a></li>
+                <li><a class="zerply" href="http://zerply.com/volovar/"><span>Zerply</span></a></li>
+                <li><a class="linkedin" href="http://www.linkedin.com/pub/michael-volovar/20/155/7b5"><span>LinkedIn</span></a></li>
+            </ul>
+        </div>
+    </div>
+
     <script type="text/javascript" src="js/navigation.js"></script>
+    <script src="/js/contact_valid.js" type="text/javascript"></script>
 </body>
 <!--|/-->
 </html>

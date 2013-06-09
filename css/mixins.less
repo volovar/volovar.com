@@ -4,14 +4,17 @@
 @sans-serif: "PT Sans", "Helvetica Neue", Arial, sans-serif;
 @serif: "PT Serif", Georgia, "Times New Roman", serif;
 
-//blue-grey
+//blue-grey - inactive color
 @color-one-light: #a9b4bd;
 @color-one-med: #586774;
 @color-one-dark: #262c32;
 
-//orange-red
+//orange-red - active color
 @color-two-light: #d6613e;
 @color-two-med: #9b442b;
+
+@color-three-light: #f8f5f1;
+@color-three-med: #d3cfca;
 
 .group {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
@@ -24,6 +27,15 @@
 
     &:after {
         clear: both;
+    }
+}
+
+.selection(@placeholder: '') {
+    &:-moz-selection {
+        background: @arguments;
+    }
+    &:selection {
+        background: @arguments;
     }
 }
 

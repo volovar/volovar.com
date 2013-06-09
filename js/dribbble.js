@@ -13,6 +13,8 @@ YUI().use('node', 'jsonp', 'jsonp-url', function(Y) {
 
             if(i == (count - 1)) {
                 html.push('<li class="last">');
+            } else if(i == (count - 2)) {
+                html.push('<li class="mid">');
             } else {
                 html.push('<li>');
             }
