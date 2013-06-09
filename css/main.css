@@ -213,7 +213,7 @@ a:focus {
   z-index: 10;
 }
 .logo {
-  background: url("img/logo.png") no-repeat 50% 6px;
+  background: url("img/logo.png") no-repeat 50% 50%;
   display: block;
   height: 70px;
   width: 70px;
@@ -258,6 +258,7 @@ a:focus {
   -ms-transition: background-color linear 0.2s;
   -webkit-transition: background-color linear 0.2s;
   transition: background-color linear 0.2s;
+  padding: 0;
   width: 100%;
 }
 .nav-button:focus,
@@ -273,16 +274,51 @@ a:focus {
   border-botoom-color: #333;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-.nav-button.active .logo {
-  background-position: 50% 6px;
-}
 .nav-button.active:focus,
 .nav-button.active.hover {
   background: #9b442b;
   color: #fff;
 }
+.nav-button.active:focus .nav-button_inner:after,
+.nav-button.active.hover .nav-button_inner:after {
+  background-color: #9b442b;
+}
+.nav-button.active .nav-button_inner .ellipsis {
+  opacity: 0;
+}
+.nav-button.active .nav-button_inner .close {
+  opacity: 1;
+}
 .nav-button img {
   height: 0;
+}
+.nav-button_inner {
+  display: block;
+  height: inherit;
+  width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+.nav-button_inner .view-icon {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 4px;
+  bottom: 1px;
+  height: 40px;
+  width: 40px;
+  -moz-transition: opacity linear 0.2s;
+  -ms-transition: opacity linear 0.2s;
+  -webkit-transition: opacity linear 0.2s;
+  transition: opacity linear 0.2s;
+}
+.nav-button_inner .ellipsis {
+  background: url("img/more-btn.png") no-repeat 50% 15px;
+  opacity: 1;
+}
+.nav-button_inner .close {
+  background: url("img/more-btn.png") no-repeat 50% -52px;
+  opacity: 0;
 }
 .nav-header {
   background: #d6613e;
@@ -313,7 +349,7 @@ a:focus {
 }
 .content {
   position: relative;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 .content .small {
   width: auto;
@@ -652,6 +688,10 @@ a:focus {
   .wrap .wrap-inner {
     max-width: 1200px;
   }
+  .nav-button_inner {
+    width: auto;
+    max-width: 1200px;
+  }
   .footer {
     width: auto;
   }
@@ -751,6 +791,14 @@ a:focus {
   .logo {
     background-image: url("img/logo-2x.png");
     background-size: 60px;
+  }
+  .nav-button_inner .ellipsis {
+    background-image: url("img/more-btn-2x.png");
+    background-size: 40px;
+  }
+  .nav-button_inner .close {
+    background-image: url("img/more-btn-2x.png");
+    background-size: 40px;
   }
   .link-list li .mid-btn {
     background-image: url("img/link-images-2x.png");
