@@ -307,18 +307,30 @@ a:focus {
   bottom: 1px;
   height: 40px;
   width: 40px;
-  -moz-transition: opacity linear 0.2s;
-  -ms-transition: opacity linear 0.2s;
-  -webkit-transition: opacity linear 0.2s;
-  transition: opacity linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
 }
 .nav-button_inner .ellipsis {
-  background: url("img/more-btn.png") no-repeat 50% 15px;
+  background: url("img/more-btn.png") no-repeat 50% 11px;
   opacity: 1;
 }
+.nav-button_inner .ellipsis.rotated {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 .nav-button_inner .close {
-  background: url("img/more-btn.png") no-repeat 50% -52px;
+  background: url("img/more-btn.png") no-repeat 50% -48px;
   opacity: 0;
+}
+.nav-button_inner .close.rotated {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .nav-header {
   background: #d6613e;

@@ -1,7 +1,11 @@
 YUI().use(['node', 'node-style', 'event', 'event-tap'], function(Y) {
     var navButton = Y.one('#navButton'),
         navHeader = Y.one('#navHeader'),
+        moreEllipsis = Y.one('.ellipsis'),
+        moreClose = Y.one('.close'),
         body = Y.one('body');
+
+    moreClose.addClass('rotated');
 
     function addNavHeight(heightAdd, addRemove) {
         navHeader.setStyle('height', heightAdd);
@@ -9,10 +13,13 @@ YUI().use(['node', 'node-style', 'event', 'event-tap'], function(Y) {
         if(addRemove) {
             navHeader.addClass('open');
             navButton.addClass('active');
+            moreEllipsis.addClass('rotated');
+            moreClose.removeClass('rotated');
         } else {
             navHeader.removeClass('open');
             navButton.removeClass('active');
-        }
+            moreEllipsis.removeClass('rotated');
+            moreClose.addClass('rotated'); }
     }
 
     navButton.on(['tap', 'keypress'], function(e) {
