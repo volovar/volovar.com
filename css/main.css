@@ -250,6 +250,7 @@ a:focus {
   font-size: 1.125em;
   font-weight: 500;
   height: 70px;
+  outline: none;
   position: relative;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
@@ -286,6 +287,9 @@ a:focus {
 .nav-header {
   background: #d6613e;
   height: 0px;
+  -moz-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   -moz-transition: height ease 0.6s;
   -ms-transition: height ease 0.6s;
@@ -468,7 +472,7 @@ a:focus {
 }
 .external-links li {
   width: 24%;
-  margin-bottom: 15px;
+  margin: 20px 0 15px;
 }
 .small-links {
   margin: 0 0 15px;
@@ -545,6 +549,7 @@ a:focus {
 }
 .contact-form {
   width: 100%;
+  padding-bottom: 20px;
   font-size: 100%;
   line-height: 1.5em;
 }
@@ -574,11 +579,10 @@ a:focus {
 }
 .contact-form fieldset input:focus,
 .contact-form fieldset textarea:focus {
-  background: #dedede;
-  background: rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3);
+  background: #d3cfca;
+  -moz-box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.9);
   border-right: 1px solid rgba(255, 255, 255, 0.9);
 }
@@ -589,20 +593,20 @@ a:focus {
   width: 60px;
   height: 30px;
   padding: 3px 7px;
+  background: #586774;
+  color: #fff;
+  cursor: pointer;
   float: right;
   font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
-  -moz-transition: all linear 0.2s;
-  -ms-transition: all linear 0.2s;
-  -webkit-transition: all linear 0.2s;
-  transition: all linear 0.2s;
+  -moz-transition: background linear 0.2s;
+  -ms-transition: background linear 0.2s;
+  -webkit-transition: background linear 0.2s;
+  transition: background linear 0.2s;
 }
 .contact-form fieldset input[type="submit"]:hover,
 .contact-form fieldset input[type="submit"]:focus .contact-form fieldset input[type="submit"]:active {
-  color: #fff;
-  cursor: pointer;
   background: #d6613e;
-  background: rgba(209, 80, 41, 0.9);
 }
 .emailError {
   color: red;
@@ -619,6 +623,7 @@ a:focus {
   clear: both;
   width: 720px;
   margin: 0 auto;
+  padding: 35px 0;
 }
 .footer .footer-inner {
   padding: 15px 30px;
