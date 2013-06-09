@@ -64,17 +64,20 @@ function show_error($myError)
 <body>
     <div class="header" id="topHeader">
         <button class="nav-button" id="navButton">
-            <img src="/img/v-logo-lores.gif" alt="volovar.com" />
-            <span class="logo">
-                <span class="logo-title left-title">michael</span>
-                <span class="logo-title right-title">volovar</span>
+            <span class="nav-button_inner">
+                <span class="logo">
+                    <span class="logo-title left-title">michael</span>
+                    <span class="logo-title right-title">volovar</span>
+                </span>
+                <span class="view-icon ellipsis"></span>
+                <span class="view-icon close"></span>
             </span>
         </button>
 
         <div class="nav-header" id="navHeader">
             <ul class="nav" id="navContents">
                 <li>
-                    <a href="/" class="headline active">
+                    <a href="/" class="headline">
                         <h1>Carefully Crafted Code</h1>
                         <h2>Delivered direct from Chicago, IL</h2>
                     </a>
@@ -86,7 +89,7 @@ function show_error($myError)
                     </a>
                 </li>
                 <li>
-                    <a href="/about.html" class="headline">
+                    <a href="/about.html" class="headline current">
                         <h1>Information Center</h1>
                         <h2>Orders, Inquiries, and General Info</h2>
                     </a>
@@ -137,7 +140,7 @@ function show_error($myError)
                             </fieldset>
                         </form>
                     </div>
-			    </div>
+                </div>
                 <!--<div class="full">
                     <h3>A little something about the creator</h3>
                     <p></p>
