@@ -159,7 +159,7 @@ function show_error($myError)
     </div>
 
     <script type="text/javascript" src="js/navigation.js"></script>
-    <script src="/js/contact_valid.js" type="text/javascript"></script>
+    <script src="/js/contactValid.js" type="text/javascript"></script>
 </body>
 <!--|/-->
 </html>
