@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="Homepage of volovar.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <title>Volovar.com</title>
 
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" media="screen, projection" href="/css/main.css" />
-    <script type="text/javascript" src="http://use.typekit.com/pla7tgp.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <script src="//yui.yahooapis.com/3.10.1/build/yui/yui-min.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-8392296-1']);
@@ -26,35 +28,39 @@
 </head>
 
 <body>
-	<div class="wrap">
-		<div class="wrap-inner">
-            <div class="header group">
-                <a class="logo" href="/">
-                    <img src="/img/v-logo-lores.gif" alt="volovar.com" />
-                    <span class="logo-title">volovar.com</span>
-                </a>
+    <div class="header" id="topHeader">
+        <button class="nav-button" id="navButton">
+            <span class="nav-button_inner">
+                <span class="logo">
+                    <span class="logo-title left-title">michael</span>
+                    <span class="logo-title right-title">volovar</span>
+                </span>
+            </span>
+        </button>
 
-                <div class="nav">
-                    <ul class="group">
-                        <li><a class="active" href="/">Home</a></li>
-                        <li><a href="/work.html">Work</a></li>
-                        <li><a href="/about.html">About</a></li>
-                    </ul>
-                </div>
-            </div>
+        <noscript>
+            <ul class="nav nav-list group">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </noscript>
+    </div>
 
+    <div class="wrap">
+        <div class="wrap-inner">
             <div class="headline">
                 <h1>Carefully Crafted Code</h1>
                 <h2>Delivered direct from Chicago, IL</h2>
             </div>
 
             <div class="content">
-                <div class="column">
-                    <p class="intro">Hello! I'm a web designer who crafts handmade sites delivered right to your url. What do you want built? Take a look at some of my <a href="/work.html">work</a> and when you're ready, <a href="/about.html">contact me.</a></p>
-                </div>
+                <!--<div class="column">-->
+                    <!--<p class="intro">Hello! I'm a web designer who crafts handmade sites delivered right to your url. What do you want built? Take a look at some of my <a href="/projects.html">work</a> and when you're ready, <a href="/about.html">contact me.</a></p>-->
+                <!--</div>-->
                 <div class="full">
-                    <h3>Recently shipped sites <a href="/work.html">See more &rArr;</a></h3>
-                    <ul class="link-list">
+                    <h3>Recently Completed Projects <a href="/projects.html">See More &rArr;</a></h3>
+                    <ul class="link-list highlight-list">
                         <li>
                             <a class="highlight-btn helium-foot" href="/helium-foot.html">
                                 <img src="/img/helium-foot-btn.png" alt="link image helium foot" />
@@ -77,19 +83,29 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-
-            <div class="footer group">
-                <p>Copyright &#169; 2013 Michael Volovar</p>
-                <ul class="small-links group">
-                    <li><a class="dribbble" href="http://dribbble.com/volovar"><span>Dribbble!</span></a></li>
-                    <li><a class="twitter" href="https://twitter.com/#!/volovar"><span>Follow me on Twitter</span></a></li>
-                    <li><a class="zerply" href="http://zerply.com/volovar/"><span>Zerply</span></a></li>
-                    <li><a class="linkedin" href="http://www.linkedin.com/pub/michael-volovar/20/155/7b5"><span>LinkedIn</span></a></li>
-                </ul>
+                <div class="full">
+                    <h3>Recently On Dribbble.com <a href="http://dribbble.com/volovar">See More &rArr;</a></h3>
+                    <ul class="link-list highlight-list shot-list">
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="footer group">
+        <div class="footer-inner">
+            <p>Copyright &#169; 2013 Michael Volovar <a href="/about.html">Info &rArr;</a></p>
+            <ul class="small-links group">
+                <li><a class="dribbble" href="http://dribbble.com/volovar"><span>Dribbble!</span></a></li>
+                <li><a class="twitter" href="https://twitter.com/#!/volovar"><span>Follow me on Twitter</span></a></li>
+                <li><a class="zerply" href="http://zerply.com/volovar/"><span>Zerply</span></a></li>
+                <li><a class="linkedin" href="http://www.linkedin.com/pub/michael-volovar/20/155/7b5"><span>LinkedIn</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/dribbble.js"></script>
 </body>
 <!--|/-->
 </html>

@@ -1,4 +1,20 @@
-@sans-serif: museo-sans, "Helvetica Neue", Arial, sans-serif;
+//@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic");
+//@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400,700|PT+Serif:400,700");
+
+@sans-serif: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+@serif: "PT Serif", Georgia, "Times New Roman", serif;
+
+//blue-grey - inactive color
+@color-one-light: #a9b4bd;
+@color-one-med: #586774;
+@color-one-dark: #262c32;
+
+//orange-red - active color
+@color-two-light: #d6613e;
+@color-two-med: #9b442b;
+
+@color-three-light: #f8f5f1;
+@color-three-med: #d3cfca;
 
 .group {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
@@ -14,6 +30,15 @@
     }
 }
 
+.selection(@placeholder: '') {
+    &:-moz-selection {
+        background: @arguments;
+    }
+    &:selection {
+        background: @arguments;
+    }
+}
+
 .border-radius(@placeholder: '') {
     -moz-border-radius: @arguments;
     -webkit-border-radius: @arguments;
@@ -24,6 +49,13 @@
     -moz-box-shadow: @arguments;
     -webkit-box-shadow: @arguments;
     box-shadow: @arguments;
+}
+
+.transform(@placeholder: '') {
+    -moz-transform: @arguments;
+    -ms-transform: @arguments;
+    -webkit-transform: @arguments;
+    transform: @arguments;
 }
 
 .transition(@placeholder: '') {
