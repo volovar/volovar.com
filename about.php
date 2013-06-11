@@ -85,14 +85,17 @@ function show_error($myError)
         <div class="wrap-inner">
             <div class="headline">
                 <h1>Information Center</h1>
-                <h2>Orders, Inquiries, and General Info</h2>
+                <h2>General Info and Inquiries</h2>
             </div>
 
             <div class="content group">
                 <div class="full">
                     <div class="column">
-                        <p class="intro">All of our sites are created to your specifications and delivered in a timely manner. Use the handy form on this page to begin the order process, send an inquiry, or just say hi. If you're still unsure of what you want, check out some of the other <a href="/projects.html">other things I've made</a></p>
-                        <p>If you're interested in a good old fashioned resume, <a href="/resume/resume.html">click here</a></p>
+                        <p class="intro">So, you're here, at my site. Who am I? Well, as you could guess from looking at the header, I'm Michael Volovar. I make stuff, mainly websites like this one. Starting a few years ago I began building sites for various small businesses around the Chicago area with one of my <a href="http://aeodesign.com/">designer friends.</a> Since then I've moved on to working on sites for larger clients with Chicago based <a href="http://www.vodori.com/index.html">Vodori</a> as well as working on their enterprise content management system, <a href="http://www.vodori.com/pepper.html">Pepper.</a></p>
+
+                        <p>If you're here to send me some mail (or report a bug) please use the convenient form on this page. If you came to this page before visiting any of the other pages, why not check out some of the <a href="/projects.html">the stuff I've made.</a></p>
+
+                        <p>If you're interested in the meta-data behind my life, you should check out my resume, <a href="/resume/resume.html">here.</a></p>
                     </div>
 
                     <div class="column">
@@ -134,7 +137,7 @@ function show_error($myError)
 
     <div class="footer group">
         <div class="footer-inner">
-            <p>Copyright &#169; 2013 Michael Volovar</p>
+            <p>Copyright &#169; 2013 Michael Volovar <a href="/about.html">Info &rArr;</a></p>
             <ul class="small-links group">
                 <li><a class="dribbble" href="http://dribbble.com/volovar"><span>Dribbble!</span></a></li>
                 <li><a class="twitter" href="https://twitter.com/#!/volovar"><span>Follow me on Twitter</span></a></li>

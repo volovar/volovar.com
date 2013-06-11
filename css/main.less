@@ -568,7 +568,7 @@ a {
         input,
         textarea {
             width: 96%;
-            font: 1em @serif;
+            font: 1em @sans-serif;
             padding: 7px 2%;
             background: #fff;
             border: 1px solid rgba(0,0,0,0.3);
@@ -598,6 +598,7 @@ a {
             font-family: @sans-serif;
             text-transform: uppercase;
             .transition(background linear .2s);
+            -webkit-appearance: none; //to remove auto styling
 
             &:hover,
             &:focus

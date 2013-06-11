@@ -631,7 +631,7 @@ a:focus {
 .contact-form fieldset input,
 .contact-form fieldset textarea {
   width: 96%;
-  font: 1em "PT Serif", Georgia, "Times New Roman", serif;
+  font: 1em "PT Sans", "Helvetica Neue", Arial, sans-serif;
   padding: 7px 2%;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -666,6 +666,7 @@ a:focus {
   -ms-transition: background linear 0.2s;
   -webkit-transition: background linear 0.2s;
   transition: background linear 0.2s;
+  -webkit-appearance: none;
 }
 .contact-form fieldset input[type="submit"]:hover,
 .contact-form fieldset input[type="submit"]:focus .contact-form fieldset input[type="submit"]:active {
