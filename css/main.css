@@ -196,7 +196,6 @@ a:focus {
 .wrap {
   width: 720px;
   margin: 0 auto;
-  padding-top: 70px;
   background: #f8f5f1;
 }
 .wrap .wrap-inner {
@@ -207,7 +206,7 @@ a:focus {
   min-height: 480px;
 }
 .header {
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -242,36 +241,37 @@ a:focus {
 }
 .nav-button {
   background-color: #586774;
-  border: none;
+  border: 0px solid rgba(0, 0, 0, 0);
   color: #fff;
-  cursor: pointer;
   display: block;
   font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.125em;
   font-weight: 500;
   height: 70px;
   outline: none;
-  position: relative;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
-  -moz-transition: background-color linear 0.2s;
-  -ms-transition: background-color linear 0.2s;
-  -webkit-transition: background-color linear 0.2s;
-  transition: background-color linear 0.2s;
+  -moz-transition: background-color linear 0.2s , border linear 0.2s;
+  -ms-transition: background-color linear 0.2s , border linear 0.2s;
+  -webkit-transition: background-color linear 0.2s , border linear 0.2s;
+  transition: background-color linear 0.2s , border linear 0.2s;
   padding: 0;
+  position: relative;
   width: 100%;
+  z-index: 1;
 }
 .nav-button:focus,
 .nav-button.hover {
   background: #d6613e;
   color: #fff;
+  cursor: pointer;
 }
 .nav-button.active {
   background-color: #d6613e;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-  border-botoom-color: #333;
+  border-bottom-color: #333;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .nav-button.active:focus,
@@ -343,6 +343,9 @@ a:focus {
   -ms-transition: height ease 0.6s;
   -webkit-transition: height ease 0.6s;
   transition: height ease 0.6s;
+  position: absolute;
+  top: 70px;
+  width: 100%;
 }
 .nav {
   margin: 0 auto;
@@ -358,6 +361,21 @@ a:focus {
 }
 .nav li a:hover {
   background: #9b442b;
+}
+.nav-list {
+  background: #586774;
+  padding-left: 25px;
+}
+.nav-list li {
+  float: left;
+  margin-bottom: 0;
+}
+.nav-list li a {
+  border-bottom: 0;
+  padding: 15px 20px;
+}
+.nav-list li a:hover {
+  background: #d6613e;
 }
 .content {
   position: relative;
@@ -401,9 +419,6 @@ a:focus {
   width: 47%;
   margin-right: 3%;
   float: left;
-}
-.column .intro {
-  font-size: 1.125em;
 }
 .full {
   width: auto;
@@ -615,9 +630,9 @@ a:focus {
 }
 .contact-form fieldset input,
 .contact-form fieldset textarea {
-  width: 100%;
+  width: 96%;
   font: 1em "PT Serif", Georgia, "Times New Roman", serif;
-  padding: 7px;
+  padding: 7px 2%;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.3);
   -moz-border-radius: 3px;
@@ -712,6 +727,9 @@ a:focus {
   }
 }
 @media (min-width: 720px) {
+  p {
+    font-size: 1.125em;
+  }
   .highlight-btn {
     max-height: 227px;
   }
@@ -779,8 +797,7 @@ a:focus {
   }
   .contact-form {
     float: none;
-    width: 82%;
-    margin: 15px auto 0;
+    margin: 15px 0 0;
   }
   .link-list li {
     width: 100%;

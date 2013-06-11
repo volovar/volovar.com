@@ -79,7 +79,6 @@ a {
 .wrap {
     width: 720px;
     margin: 0 auto;
-    padding-top: 70px;
     background: @color-three-light;
 
     .wrap-inner {
@@ -96,7 +95,7 @@ a {
 // header
 //
 .header {
-    position: absolute;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 10;
@@ -133,9 +132,8 @@ a {
 
 .nav-button {
     background-color: @color-one-med;
-    border: none;
+    border: 0px solid rgba(0,0,0,0);
     color: #fff;
-    cursor: pointer;
     display: block;
     font-family: @sans-serif;
     font-size: 1.125em;
@@ -145,26 +143,30 @@ a {
     position: relative;
     text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
     text-transform: uppercase;
-    .transition(background-color linear .2s);
+    .transition(background-color linear .2s~',' border linear .2s);
     padding: 0;
+    position: relative;
     width: 100%;
+    z-index: 1;
 
     &:focus,
     &.hover {
         background: @color-two-light;
         color: #fff;
+        cursor: pointer;
     }
 
     &.active {
         background-color: @color-two-light;
         .box-shadow(0 1px 0 rgba(255,255,255,0.3));
-        border-botoom-color: #333;
+        border-bottom-color: #333;
         border-bottom: 1px solid rgba(0,0,0,0.3);
 
         &:focus,
         &.hover {
             background: @color-two-med;
             color: #fff;
+
             .nav-button_inner:after {
                 background-color: @color-two-med;
             }
@@ -229,6 +231,9 @@ a {
     .box-shadow(0 5px 8px rgba(0,0,0,0.4));
     overflow: hidden;
     .transition(height ease .6s);
+    position: absolute;
+    top: 70px;
+    width: 100%;
 }
 
 .nav {
@@ -243,6 +248,26 @@ a {
 
             &:hover {
                 background: @color-two-med;
+            }
+        }
+    }
+}
+
+//navigation for browsers without javascript
+.nav-list {
+    background: @color-one-med;
+    padding-left: 25px;
+
+    li {
+        float: left;
+        margin-bottom: 0;
+
+        a {
+            border-bottom: 0;
+            padding: 15px 20px;
+
+            &:hover {
+                background: @color-two-light;
             }
         }
     }
@@ -301,10 +326,6 @@ a {
     width: 47%;
     margin-right: 3%;
     float: left;
-
-    .intro {
-        font-size: 1.125em;
-    }
 }
 
 
@@ -546,9 +567,9 @@ a {
 
         input,
         textarea {
-            width: 100%;
+            width: 96%;
             font: 1em @serif;
-            padding: 7px;
+            padding: 7px 2%;
             background: #fff;
             border: 1px solid rgba(0,0,0,0.3);
             .border-radius(3px);

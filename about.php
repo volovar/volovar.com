@@ -69,33 +69,16 @@ function show_error($myError)
                     <span class="logo-title left-title">michael</span>
                     <span class="logo-title right-title">volovar</span>
                 </span>
-                <span class="view-icon ellipsis"></span>
-                <span class="view-icon close"></span>
             </span>
         </button>
 
-        <div class="nav-header" id="navHeader">
-            <ul class="nav" id="navContents">
-                <li>
-                    <a href="/" class="headline">
-                        <h1>Carefully Crafted Code</h1>
-                        <h2>Delivered direct from Chicago, IL</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="/projects.html" class="headline">
-                        <h1>Project Storage</h1>
-                        <h2>A backlog of the things I've crafted</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="/about.html" class="headline current">
-                        <h1>Information Center</h1>
-                        <h2>Orders, Inquiries, and General Info</h2>
-                    </a>
-                </li>
+        <noscript>
+            <ul class="nav nav-list group">
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a class="active" href="/about.html">About</a></li>
             </ul>
-        </div>
+        </noscript>
     </div>
 
     <div class="wrap">
@@ -106,7 +89,7 @@ function show_error($myError)
             </div>
 
             <div class="content group">
-				<div class="full">
+                <div class="full">
                     <div class="column">
                         <p class="intro">All of our sites are created to your specifications and delivered in a timely manner. Use the handy form on this page to begin the order process, send an inquiry, or just say hi. If you're still unsure of what you want, check out some of the other <a href="/projects.html">other things I've made</a></p>
                         <p>If you're interested in a good old fashioned resume, <a href="/resume/resume.html">click here</a></p>
