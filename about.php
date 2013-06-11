@@ -95,7 +95,7 @@ function show_error($myError)
 
                         <p>If you're here to send me some mail (or report a bug) please use the convenient form on this page. If you came to this page before visiting any of the other pages, why not check out some of the <a href="/projects.html">the stuff I've made.</a></p>
 
-                        <p>If you're interested in the meta-data behind my life, you should check out my resume, <a href="/resume/resume.html">here.</a></p>
+                        <p>If you're interested in the metadata behind my life, you should check out my resume, <a href="/resume/resume.html">here.</a></p>
                     </div>
 
                     <div class="column">
@@ -127,10 +127,6 @@ function show_error($myError)
                         </form>
                     </div>
                 </div>
-                <!--<div class="full">
-                    <h3>A little something about the creator</h3>
-                    <p></p>
-                </div>-->
             </div>
         </div>
     </div>
