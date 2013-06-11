@@ -303,7 +303,7 @@ a:focus {
   content: " ";
   display: block;
   position: absolute;
-  right: 4px;
+  right: 15px;
   bottom: 1px;
   height: 40px;
   width: 40px;
