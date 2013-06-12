@@ -334,16 +334,16 @@ a:focus {
 }
 .nav-header {
   background: #d6613e;
-  height: 0px;
   -moz-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+  height: 0px;
   overflow: hidden;
+  position: absolute;
   -moz-transition: height ease 0.6s;
   -ms-transition: height ease 0.6s;
   -webkit-transition: height ease 0.6s;
   transition: height ease 0.6s;
-  position: absolute;
   top: 70px;
   width: 100%;
 }
@@ -536,6 +536,10 @@ a:focus {
 .external-links li {
   width: 24%;
   margin: 20px 0 15px;
+}
+.text-list {
+  font-size: 1.125em;
+  line-height: 1.5em;
 }
 .small-links {
   margin: 0 0 15px;
