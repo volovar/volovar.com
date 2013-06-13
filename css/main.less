@@ -24,8 +24,14 @@ em {
 // typography
 //
 p {
+    font-size: 1.125em;
     line-height: 1.5em;// 24px
     margin-bottom: 1.5em;
+}
+
+li {
+    font-size: 1.125em;
+    line-height: 1.5em;
 }
 
 //h1, h2, h3, h4, h5, h6 {
@@ -302,7 +308,7 @@ a {
     padding: 40px 15px;
     text-align: center;
     .box-shadow(0 1px 0 rgba(255,255,255,0.3));
-    border-botoom-color: #333;
+    border-bottom-color: #333;
     border-bottom: 1px solid rgba(0,0,0,0.3);
 
     h1 {
@@ -314,18 +320,35 @@ a {
         font-size: 1.125em;
     }
 
+    h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
     a {
         &:hover,
         &:focus {
             color: @color-two-light;
         }
     }
+
+    &.alternate {
+        background: @color-one-med;
+        color: #fff;
+        margin-bottom: 30px;
+        padding: 15px;
+        border: 0;
+    }
 }
 
 .column {
-    width: 47%;
-    margin-right: 3%;
+    width: 48.5%;
     float: left;
+
+    &.first {
+        margin-right: 3%;
+    }
 }
 
 
@@ -458,6 +481,16 @@ a {
 .text-list {
     font-size: 1.125em;
     line-height: 1.5em;
+
+    li {
+        margin-bottom: 60px;
+    }
+
+    &.link-list {
+        li {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 //

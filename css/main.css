@@ -156,8 +156,13 @@ em {
   font-style: italic;
 }
 p {
+  font-size: 1.125em;
   line-height: 1.5em;
   margin-bottom: 1.5em;
+}
+li {
+  font-size: 1.125em;
+  line-height: 1.5em;
 }
 h1 {
   font-size: 2.25em;
@@ -401,7 +406,7 @@ a:focus {
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-  border-botoom-color: #333;
+  border-bottom-color: #333;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .headline h1 {
@@ -411,14 +416,28 @@ a:focus {
 .headline h2 {
   font-size: 1.125em;
 }
+.headline h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .headline a:hover,
 .headline a:focus {
   color: #d6613e;
 }
+.headline.alternate {
+  background: #586774;
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 0;
+}
 .column {
-  width: 47%;
-  margin-right: 3%;
+  width: 48.5%;
   float: left;
+}
+.column.first {
+  margin-right: 3%;
 }
 .full {
   width: auto;
@@ -540,6 +559,12 @@ a:focus {
 .text-list {
   font-size: 1.125em;
   line-height: 1.5em;
+}
+.text-list li {
+  margin-bottom: 60px;
+}
+.text-list.link-list li {
+  margin-bottom: 30px;
 }
 .small-links {
   margin: 0 0 15px;
@@ -740,11 +765,11 @@ a:focus {
   }
 }
 @media (max-width: 720px) {
-  .highlight-list li {
+  .link-list li {
     width: 48%;
     margin-bottom: 15px;
   }
-  .highlight-list li.mid {
+  .link-list li.mid {
     margin-right: 0;
   }
 }

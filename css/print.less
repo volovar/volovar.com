@@ -1,0 +1,42 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#topHeader,
+.no-print,
+.footer {
+    display: none;
+}
+
+.link-list {
+    text-align: justify;
+
+    li {
+        display: inline-block;
+        width: 31%;
+    }
+
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.text-list {
+    li {
+        margin-bottom: 30px;
+    }
+
+    &.link-list {
+        li {
+            margin-bottom: 15px;
+        }
+    }
+}
