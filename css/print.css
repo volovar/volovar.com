@@ -7,6 +7,7 @@ a {
   text-decoration: none;
 }
 #topHeader,
+.headline h2,
 .no-print,
 .footer {
   display: none;
