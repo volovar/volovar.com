@@ -8,12 +8,12 @@
 @import url("mixins.less");
 
 body {
-    min-width: 100%;
+    background: @color-three-med;
+    color: @color-one-med;
     font-size: 100%;// 16px
     font-family: @sans-serif;
-    color: @color-one-med;
     height: 100%;
-    background: @color-three-med;
+    min-width: 100%;
 }
 
 em {
@@ -34,10 +34,6 @@ li {
     line-height: 1.5em;
 }
 
-//h1, h2, h3, h4, h5, h6 {
-//    font-family: @sans-serif;
-//}
-
 h1 {
     font-size: 2.25em;// 36px
     line-height: 1.5em;
@@ -56,17 +52,15 @@ h3 {
 //h4 {
 //    font-size: 1.125em;
 //}
-
 a {
-    color: inherit;
     border-bottom: 1px dotted;
+    color: inherit;
     text-decoration: none;
     .transition(color linear .1s~',' box-shadow linear .1s~',' text-shadow linear .1s);
 
     &:hover,
     &:focus {
         color: #d6613e;
-//        color: rgba(209,80,41,0.9);
     }
 }
 
@@ -83,13 +77,13 @@ a {
 }
 
 .wrap {
-    width: 720px;
-    margin: 0 auto;
     background: @color-three-light;
+    margin: 0 auto;
+    width: 720px;
 
     .wrap-inner {
-        padding: 0 30px;
         margin: 0 auto;
+        padding: 0 30px;
     }
 }
 
@@ -111,11 +105,11 @@ a {
     background: url("img/logo.png") no-repeat 50% 50%;
     display: block;
     height: 70px;
-    width: 70px;
-    position: absolute;
     left: 50%;
-    top: 0;
     margin-left: -35px;
+    position: absolute;
+    top: 0;
+    width: 70px;
 }
 
 .logo-title {
@@ -127,8 +121,8 @@ a {
 }
 
 .left-title {
-    right: 0;
     padding-right: 4em;
+    right: 0;
 }
 
 .right-title {
@@ -146,12 +140,11 @@ a {
     font-weight: 500;
     height: 70px;
     outline: none;
+    padding: 0;
     position: relative;
     text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
     text-transform: uppercase;
     .transition(background-color linear .2s~',' border linear .2s);
-    padding: 0;
-    position: relative;
     width: 100%;
     z-index: 1;
 
@@ -164,9 +157,9 @@ a {
 
     &.active {
         background-color: @color-two-light;
-        .box-shadow(0 1px 0 rgba(255,255,255,0.3));
         border-bottom-color: #333;
         border-bottom: 1px solid rgba(0,0,0,0.3);
+        .box-shadow(0 1px 0 rgba(255,255,255,0.3));
 
         &:focus,
         &.hover {
@@ -197,19 +190,19 @@ a {
 .nav-button_inner {
     display: block;
     height: inherit;
-    width: 720px;
     margin: 0 auto;
     position: relative;
+    width: 720px;
 
     .view-icon {
+        bottom: 1px;
         content: " ";
         display: block;
+        height: 40px;
         position: absolute;
         right: 15px;
-        bottom: 1px;
-        height: 40px;
-        width: 40px;
         .transition(all linear .2s);
+        width: 40px;
     }
 
     .ellipsis {
@@ -237,8 +230,8 @@ a {
     height: 0px;
     overflow: hidden;
     position: absolute;
-    .transition(height ease .6s);
     top: 70px;
+    .transition(height ease .6s);
     width: 100%;
 }
 
@@ -283,33 +276,33 @@ a {
 //content
 //
 .content {
-    position: relative;
     margin-top: 40px;
+    position: relative;
 
     .small {
         width: auto;
 
         p {
             font-size: 1.25em;
+            float: left;
             padding: 1.5em 0;
             width: 60%;
-            float: left;
         }
 
         .column {
-            width: 30%;
             float: right;
             margin: 0;
+            width: 30%;
         }
     }
 }
 
 .headline {
-    padding: 40px 15px;
-    text-align: center;
-    .box-shadow(0 1px 0 rgba(255,255,255,0.3));
     border-bottom-color: #333;
     border-bottom: 1px solid rgba(0,0,0,0.3);
+    .box-shadow(0 1px 0 rgba(255,255,255,0.3));
+    padding: 40px 15px;
+    text-align: center;
 
     h1 {
         font-weight: bold;
@@ -334,16 +327,16 @@ a {
 
     &.alternate {
         background: @color-one-med;
+        border: 0;
         color: #fff;
         margin-bottom: 30px;
         padding: 15px;
-        border: 0;
     }
 }
 
 .column {
-    width: 48.5%;
     float: left;
+    width: 48.5%;
 
     &.first {
         margin-right: 3%;
@@ -352,12 +345,12 @@ a {
 
 
 .full {
-    width: auto;
     clear: both;
+    width: auto;
 
     img {
-        margin: 0 0 30px;
         .box-shadow(8px 8px 15px rgba(0,0,0,0.3));
+        margin: 0 0 30px;
         width: 100%;
     }
 }
@@ -370,13 +363,13 @@ a {
 
     li {
         display: inline-block;
-        width: 31%;
         margin-bottom: 30px;
+        width: 31%;
 
         .highlight-btn {
             background: @color-one-dark;
-            .border-radius(4px);
             border: 2px solid @color-one-dark;
+            .border-radius(4px);
             color: #fff;
             display: block;
             position: relative;
@@ -397,37 +390,37 @@ a {
             }
 
             span {
-                display: block;
+                background: @color-one-med;
                 border-top: 1px solid @color-one-dark;
+                bottom: 0;
+                display: block;
+                left: 0;
                 padding: 10px 0;
                 position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background: @color-one-med;
                 text-align: start;
                 text-indent: 15px;
                 .transition(background linear .2s~',' box-shadow linear .2s);
+                width: 100%;
             }
 
             img {
                 display: block;
                 margin: 0;
-                width: 100%;
                 .transition(opacity linear .2s);
+                width: 100%;
             }
         }
 
         .mid-btn {
-            width: 90px;
-            height: 90px;
             background: @color-one-med url("img/link-images.png") no-repeat 0 0;
             border: none;
             .border-radius(50%);
             display: block;
+            height: 90px;
             margin: 0 auto;
             text-indent: -9999em;
             .transition(background-color linear .2s);
+            width: 90px;
 
             &:hover {
                 background-color: @color-two-light;
@@ -473,8 +466,8 @@ a {
 }
 
 .external-links li {
-    width: 24%;
     margin: 20px 0 15px;
+    width: 24%;
 }
 
 .text-list {
@@ -496,21 +489,21 @@ a {
 // social media links
 //
 .small-links {
-    margin: 0 0 15px;
     float: right;
+    margin: 0 0 15px;
 
     li {
         float: left;
         margin-right: 15px;
 
         a {
-            display: block;
-            width: 45px;
-            height: 45px;
             background: @color-one-med url("img/icons.png") no-repeat 0 0;
             border: none;
             .border-radius(50%);
+            display: block;
+            height: 45px;
             .transition(background-color linear .2s);
+            width: 45px;
 
             &:hover {
                 background-color: @color-two-light;
@@ -553,20 +546,20 @@ a {
 //work info
 //
 .details {
-    position: absolute;
-    right: -30px;
     bottom: 10px;
-    width: 280px;
-    padding: 10px 0;
     .box-shadow(-3px 3px 10px rgba(0,0,0,0.6));
     background: #000;
     background: rgba(0,0,0,0.8);
     .border-radius(10px 0 0 10px);
     line-height: 1.35em;
+    padding: 10px 0;
+    position: absolute;
+    right: -30px;
+    width: 280px;
 
     li {
-        padding: 7px 15px;
         color: #fff;
+        padding: 7px 15px;
 
         a {
             color: #fff;
@@ -583,10 +576,10 @@ a {
 // contact
 //
 .contact-form {
-    width: 100%;
-    padding-bottom: 20px;
     font-size: 100%;
     line-height: 1.5em;
+    padding-bottom: 20px;
+    width: 100%;
 
     fieldset {
         margin-bottom: 10px;
@@ -604,19 +597,19 @@ a {
 
         input,
         textarea {
-            width: 96%;
-            font: 1em @sans-serif;
-            padding: 7px 2%;
             background: #fff;
             border: 1px solid rgba(0,0,0,0.3);
             .border-radius(3px);
+            font: 1em @sans-serif;
             outline: none;
+            padding: 7px 2%;
+            width: 96%;
 
             &:focus {
                 background: @color-three-med;
-                .box-shadow( inset 1px 2px 3px rgba(0,0,0,0.3));
                 border-bottom: 1px solid rgba(255,255,255,0.9);
                 border-right: 1px solid rgba(255,255,255,0.9);
+                .box-shadow( inset 1px 2px 3px rgba(0,0,0,0.3));
             }
         }
 
@@ -625,17 +618,17 @@ a {
         }
 
         input[type="submit"] {
-            width: 60px;
-            height: 30px;
-            padding: 3px 7px;
             background: @color-one-med;
             color: #fff;
             cursor: pointer;
             float: right;
             font-family: @sans-serif;
+            height: 30px;
+            padding: 3px 7px;
             text-transform: uppercase;
             .transition(background linear .2s);
             -webkit-appearance: none; //to remove auto styling
+            width: 60px;
 
             &:hover,
             &:focus
@@ -664,9 +657,9 @@ a {
 //
 .footer {
     clear: both;
-    width: 720px;
     margin: 0 auto;
     padding: 35px 0;
+    width: 720px;
 
     .footer-inner {
         padding: 15px 30px;
