@@ -1,4 +1,6 @@
-volovarCom_update
+volovar.com
 =================
 
-Update Spring 2013. 4th iteration of my site, volovar.com
+Currently on the 4th version.
+
+Update Spring 2013. 4th iteration of volovar.com
