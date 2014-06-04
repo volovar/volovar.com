@@ -133,7 +133,7 @@ function show_error($myError)
 
     <div class="footer group">
         <div class="footer-inner">
-            <p>Copyright &#169; 2013 Michael Volovar <a href="/about.html">Info &rArr;</a></p>
+            <p>&#169;<span id="date">200X</span> Michael Volovar <a href="/about.html">Info &rArr;</a></p>
             <ul class="small-links group">
                 <li><a class="dribbble" href="http://dribbble.com/volovar"><span>Dribbble!</span></a></li>
                 <li><a class="twitter" href="https://twitter.com/#!/volovar"><span>Follow me on Twitter</span></a></li>
@@ -145,6 +145,7 @@ function show_error($myError)
 
     <script type="text/javascript" src="js/navigation.js"></script>
     <script src="/js/contactValid.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/date.js"></script>
 </body>
 <!--|/-->
 </html>
