@@ -91,11 +91,11 @@ function show_error($myError)
             <div class="content group">
                 <div class="full">
                     <div class="column first">
-                        <p class="intro">So, you're here, at my site. Who am I? Well, as you could guess from looking at the header, I'm Michael Volovar. I make stuff, mainly websites like this one. Starting a few years ago I began building sites for various small businesses around the Chicago area with one of my <a href="http://aeodesign.com/">designer friends.</a> Since then I've moved on to working on sites for larger clients with Chicago based <a href="http://www.vodori.com/index.html">Vodori</a> as well as working on their enterprise content management system, <a href="http://www.vodori.com/pepper.html">Pepper.</a></p>
+                        <p class="intro">I'm Michael Volovar, web developer by day and web developer by night. During the day I write Javascript and wrangle CSS for <a href="//www.studyblue.com" target="_blank">StudyBlue</a> and at night I try to learn new things and build stuff for myself. Before I became a web developer my plan was to make movies. This led to me working as a designer &amp; animator in need of a web presence. In the process of creating a site I discovered my love of the web. Once that happened, I began building sites for various small businesses in Chicago with one of my <a href="//aeodesign.com/" target="_blank">designer friends</a> and eventually moved to <a href="//www.vodori.com/index.html" target="_blank">Vodori</a> to work with larger clients as well as build their content management system, <a href="//www.vodori.com/pepper.html" target="_blank">Pepper.</a></p>
 
-                        <p>If you're here to send me some mail (or report a bug) please use the convenient form on this page. If you came to this page before visiting any of the other pages, why not check out some of the <a href="/projects.html">the stuff I've made.</a></p>
+                        <p>If you'd like to work with me or just chat, send me some mail using the form on this page. If you came to this page before visiting any of the other pages, why not check out some of the stuff I've <a href="/projects.html">made.</a></p>
 
-                        <p>If you're interested in the metadata behind my life, you should check out my resume, <a href="/resume/resume.html">here.</a></p>
+                        <p>You can download my resume <a href="/docs/volovar-resume-2013.pdf" target="_blank">here</a> or check me out on <a href="//www.linkedin.com/pub/michael-volovar/20/155/7b5" target="_blank">LinkedIn</a></p>
                     </div>
 
                     <div class="column">
@@ -167,7 +167,7 @@ function contains_bad_str($str_to_test) {
 				,"cc:"
 				,"to:"
   );
-  
+
   foreach($bad_strings as $bad_string) {
     if(eregi($bad_string, strtolower($str_to_test))) {
       echo "$bad_string found. Suspected injection attempt - mail not being sent.";
@@ -181,7 +181,7 @@ function contains_newlines($str_to_test) {
      echo "newline found in $str_to_test. Suspected injection attempt - mail not being sent.";
      exit;
    }
-} 
+}
 
 if($_SERVER['REQUEST_METHOD'] != "POST"){
    echo("Unauthorized attempt to access page.");
