@@ -51,6 +51,12 @@
     box-shadow: @arguments;
 }
 
+.box-sizing(@args) {
+    -moz-box-sizing: @args;
+    -webkit-box-sizing: @args;
+    box-sizing: @args;
+}
+
 .transform(@placeholder: '') {
     -moz-transform: @arguments;
     -ms-transform: @arguments;
