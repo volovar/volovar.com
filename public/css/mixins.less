@@ -1,0 +1,137 @@
+//@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic");
+//@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400,700|PT+Serif:400,700");
+// font variables
+@sans-serif: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+@serif: "PT Serif", Georgia, "Times New Roman", serif;
+
+// color variables
+@red-base: #ab4c4c;
+@red-light: #7e4646;
+@red-mid: #563b3b;
+@red-dark: #332b2b;
+
+@aqua-base: #4cabab;
+@aqua-light: #467e7e;
+@aqua-mid: #3b5656;
+@aqua-dark: #2b3333;
+
+@purple-base: #7b4cab;
+@purple-light: #62467e;
+@purple-mid: #483b56;
+@purple-dark: #2f2b33;
+
+@grey-base: #fafafa;
+@grey-light: #d1d1d1;
+@grey-mid: #a8a8a8;
+@grey-dark: #7f7f7f;
+
+@body-bg: @grey-base;
+@h1: @grey-dark;
+@link: @red-base;
+@link-hover: @red-light;
+@link-alt: @grey-mid;
+@link-alt-hover: @grey-dark;
+@text-main: @red-dark;
+@text-light: @link-alt;
+
+// other variables
+@speed: 120ms;
+
+// mixins for psuedo-selectors
+.align-items(@args) {
+    -ms-flex-align: @args;
+    -webkit-align-items: @args;
+    -webkit-box-align: @args;
+    align-items: @args;
+}
+
+.border-radius(@args) {
+    -moz-border-radius: @args;
+    -webkit-border-radius: @args;
+    border-radius: @args;
+}
+
+.box-shadow(@args) {
+    -moz-box-shadow: @args;
+    -webkit-box-shadow: @args;
+    box-shadow: @args;
+}
+
+.box-sizing(@args) {
+    -moz-box-sizing: @args;
+    -webkit-box-sizing: @args;
+    box-sizing: @args;
+}
+
+.flex(@arg1, @arg2, @arg3) {
+    -ms-flex: @arg1 @arg2 @arg3;
+    -webkit-box-flex: @arg1;
+    -webkit-flex: @arg1 @arg2 @arg3;
+    flex: @arg1 @arg2 @arg3;
+}
+
+.flex-display() {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-wrap(@args) {
+    -ms-flex-wrap: @args;
+    -webkit-flex-wrap: @args;
+    flex-wrap: @args;
+}
+
+.justify-content(@args) {
+    -webkit-justify-content: @args;
+    justify-content: @args;
+}
+
+.text-shadow(@args) {
+    -moz-text-shadow: @args;
+    -webkit-text-shadow: @args;
+    text-shadow: @args;
+}
+
+.transform(@args) {
+    -moz-transform: @args;
+    -webkit-transform: @args;
+    transform: @args;
+}
+
+.transition(@args) {
+    -moz-transition: @args;
+    -webkit-transition: @args;
+    transition: @args;
+}
+
+.selection(@placeholder: '') {
+    &:-moz-selection {
+        background: @arguments;
+    }
+    &:selection {
+        background: @arguments;
+    }
+}
+
+// other mixins
+.flex-block(@align, @justify) {
+    .align-items(@align);
+    .flex-display();
+    .justify-content(@justify);
+}
+
+.flex-block-center {
+    .flex-block(center, space-between);
+}
+
+.group {
+    &:after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+        width: 100%;
+    }
+}

@@ -8,102 +8,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <title>Volovar.com</title>
+    <title>volovar.com</title>
 
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" media="screen, projection" href="/css/main.css" />
-
-    <script src="//yui.yahooapis.com/3.10.1/build/yui/yui-min.js"></script>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-8392296-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="/public/css/main.css" />
 </head>
 
 <body>
-    <div class="header" id="topHeader">
-        <button class="nav-button" id="navButton">
-            <span class="nav-button_inner">
-                <span class="logo">
-                    <span class="logo-title left-title">michael</span>
-                    <span class="logo-title right-title">volovar</span>
-                </span>
-            </span>
-        </button>
+    <div class="header-block">
+        <a class="link-alt" href="/">
+            <h3>Michael Volovar</h3>
+        </a>
 
-        <noscript>
-            <ul class="nav nav-list group">
-                <li><a class="active" href="/">Home</a></li>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/about.html">About</a></li>
-            </ul>
-        </noscript>
+        <ul class="nav-block">
+            <li><a href="http://github.com/volovar" target="_blank">github</a></li>
+            <li><a class="dribbble" href="http://dribbble.com/volovar">dribbble</a></li>
+            <li><a class="twitter" href="https://twitter.com/volovar">twitter</a></li>
+        </ul>
     </div>
 
-    <div class="wrap">
-        <div class="wrap-inner">
-            <div class="headline">
-                <h1>Carefully Crafted Code</h1>
-                <h2>Delivered direct from San Francisco, CA</h2>
-            </div>
-
-            <div class="content">
-                <div class="full">
-                    <h3>Recently Completed Projects <a href="/projects.html">See More &rArr;</a></h3>
-                    <ul class="link-list highlight-list">
-                        <li>
-                            <a class="highlight-btn helium-foot" href="/helium-foot.html">
-                                <img src="/img/helium-foot-btn.png" alt="link image helium foot" />
-                                <span>Helium Foot</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="highlight-btn kidadmit" href="/kidadmit.html">
-                                <img src="/img/kidadmit-btn.png" alt="link image kidadmit" />
-                                <span>KidAdmit</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="highlight-btn eurekatory" href="/eurekatory.html">
-                                <img src="/img/eurekatory-btn.png" alt="link image eurekatory" />
-                                <span>Eurekatory</span>
-                            </a>
-                        </li>
-                    </ul>
+    <div class="content-block">
+        <div class="content-main-block">
+            <div class="feature-block">
+                <div class="feature-button feature-button-full feature-button-imho">
+                    <a href="http://www.imho.pub">
+                        <!-- <img src="/public/images/mike.svg" alt="imho.pub cat image" /> -->
+                        <span class="title">IMHO.pub</span>
+                    </a>
                 </div>
-                <div class="full">
-                    <h3>Recently posted to Dribbble <a href="http://dribbble.com/volovar">See More &rArr;</a></h3>
-                    <ul class="link-list highlight-list shot-list">
-                    </ul>
+
+                <div class="feature-button feature-button-alt feature-button-twitch">
+                    <a href="http://www.twitch.tv/videonaut">
+                        <!-- <img src="/img/kidadmit-btn.png" alt="studyblue image" /> -->
+                        <span class="title">Videonaut</span>
+                    </a>
+                </div>
+
+                <div class="feature-button feature-button-sb">
+                    <a href="https://www.studyblue.com">
+                        <!-- <img src="/img/eurekatory-btn.png" alt="twitch image" /> -->
+                        <span class="title">StudyBlue</span>
+                    </a>
                 </div>
             </div>
+
+        </div>
+
+        <div class="content-main-block">
+            <h3>About</h3>
+            <p>Hi There. <a href="/resume.html">View my resume.</a></p>
+        </div>
+
+        <div class="content-main-block">
+            <div id="dribbble-block" class="feature-block"></div>
         </div>
     </div>
 
-    <div class="footer group">
-        <div class="footer-inner">
-            <p>&#169;<span id="date">200X</span> Michael Volovar <a href="/about.html">Info &rArr;</a></p>
-            <ul class="small-links group">
-                <li><a class="dribbble" href="http://dribbble.com/volovar"><span>Dribbble!</span></a></li>
-                <li><a class="twitter" href="https://twitter.com/#!/volovar"><span>Follow me on Twitter</span></a></li>
-                <li><a class="zerply" href="http://zerply.com/volovar/"><span>Zerply</span></a></li>
-                <li><a class="linkedin" href="http://www.linkedin.com/pub/michael-volovar/20/155/7b5"><span>LinkedIn</span></a></li>
-            </ul>
-        </div>
+    <div class="footer-block">
+        <a class="link-alt" href="/"><h3>&#169;<span id="date">20XX</span> Michael Volovar</h3></a>
+
+        <ul class="nav-block">
+            <li><a href="//github.com/volovar" target="_blank">github</a></li>
+            <li><a href="http://dribbble.com/volovar" target="_blank">dribbble</a></li>
+            <li><a href="https://twitter.com/volovar" target="_blank">twitter</a></li>
+        </ul>
     </div>
 
-    <script type="text/javascript" src="js/navigation.js"></script>
-    <script type="text/javascript" src="js/dribbble.js"></script>
-    <script type="text/javascript" src="js/date.js"></script>
+    <script src="//yui.yahooapis.com/3.10.1/build/yui/yui-min.js"></script>
+    <script type="text/javascript" src="/public/js/dribbble.js"></script>
+    <script type="text/javascript" src="/public/js/date.js"></script>
+    <script type="text/javascript" src="/public/js/ga.js"></script>
 </body>
 <!--|/-->
 </html>
