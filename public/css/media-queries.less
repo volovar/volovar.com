@@ -1,108 +1,25 @@
-@media all {
-
-}
-
-@media (min-width: 720px) {
-    .highlight-btn {
-        max-height: 227px;
+@media (max-width: 660px) {
+    .wrapper-block {
+        padding: 10px 16px;
     }
-}
 
-@media (max-width: 720px) {
-    .link-list li {
-        width: 48%;
-        margin-bottom: 15px;
+    .content-block.resume-block {
+        padding: 0 16px;
+    }
 
-        &.mid {
-            margin-right: 0;
+    .layout-block {
+        width: 50%;
+
+        .title {
+            padding: 18px 16px;
         }
     }
-
-    .resume {
-        main-column: ;
-    }
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
-    h1, h2, h3, h4, h5, h6 {
-        line-height: 1.25em;
-    }
-
-    .full img {
-        margin-bottom: 15px;
-    }
-
-    .details {
-        position: inherit;
-        width: auto;
-    }
-
-    .logo-title {
-        display: none;
-    }
-
-    .wrap .wrap-inner {
-        padding: 0;
-    }
-
-    .min-height {
-        min-height: inherit;
-    }
-
-    .headline h2 a {
-        display: block;
-        width: auto;
-        margin-bottom: 5px;
-        border-bottom: none;
-    }
-
-    .nav ul {
-        text-align: center;
-
-        li {
-            display: inline;
-            float: none;
-            width: auto;
-            margin: 0;
-            padding: 4px 8px 2px;
-
-            a {
-                display: inline;
-                padding: 8px 3px;
-            }
-        }
-    }
-
-    .content {
-        padding: 0 30px;
-    }
-
-    .column {
-        width: 100%;
-        margin: 0;
-    }
-
-    .contact-form {
-        float: none;
-        margin: 15px 0 0;
-    }
-
-    .link-list li {
-        width: 100%;
-    }
-
-    .external-links li {
-        width: 49%;
-    }
-
-    .details {
-        .border-radius(15px);
-    }
-
-    .footer p {
-        float: none;
-        text-align: center;
-        width: 100%;
+@media (max-height: 400px) and (orientation: landscape) {
+    .layout-block {
+        min-height: 160px;
+        width: 33.333%;
     }
 }
 

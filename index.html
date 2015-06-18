@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="header-block">
+    <div class="header-block wrapper-block">
         <a class="link-alt" href="/">
             <h3>Michael Volovar</h3>
         </a>
@@ -30,45 +30,60 @@
     <div class="content-block">
         <div class="layout-block-container">
             <div class="layout-block feature-button">
-                <a href="http://www.imho.pub">
-                    <span class="title">IMHO.pub</span>
+                <a href="http://www.imho.pub" target="_blank">
+                    <span class="title">
+                        <strong>IMHO.pub</strong>
+                        <span class="description">A living publication &rarr;</span>
+                    </span>
                 </a>
             </div>
 
             <div class="layout-block feature-button">
-                <a href="https://www.studyblue.com">
-                    <span class="title">StudyBlue</span>
+                <a href="https://www.studyblue.com" target="_blank">
+                    <span class="title">
+                        <strong>StudyBlue</strong>
+                        <span class="description">Flashcard app for web and mobile &rarr;</span>
+                    </span>
                 </a>
             </div>
 
             <div class="layout-block feature-button">
-                <a href="http://www.twitch.tv/videonaut">
-                    <span class="title">Videonaut</span>
+                <a href="/" target="_blank">
+                    <span class="title">
+                        <strong>Overcast +</strong>
+                        <span class="description">An extension that alters overcast.fm &rarr;</span>
+                    </span>
                 </a>
             </div>
 
             <div class="layout-block feature-button">
-                <a href="http://www.twitch.tv/videonaut">
-                    <span class="title">Overcast +</span>
+                <a href="http://www.twitch.tv/videonaut" target="_blank">
+                    <span class="title">
+                        <strong>Videonaut</strong>
+                        <span class="description">Live video game broadcast &rarr;</span>
+                    </span>
                 </a>
             </div>
 
             <div class="layout-block feature-button">
-                <a href="http://dribbble.com/volovar">
-                    <span class="title">Dribbble</span>
+                <a href="http://dribbble.com/volovar" target="_blank">
+                    <span class="title">
+                        <strong>Dribbble</strong>
+                        <span class="description">Random designs and sketches &rarr;</span>
+                    </span>
                 </a>
             </div>
 
             <div class="layout-block layout-block-about">
-                <h3 class="title">About</h3>
-            
-                <p class="title">Hi There. <a href="/resume.html">View resume</a></p>
+                <span class="title">
+                    <span class="description">Hi there, I'm Mike Volovar. I'm a front end engineer making things in San Francisco. <a href="/resume.html">R&eacute;sum&eacute; &rarr;</a></span>
+                </span>
             </div>
         </div>
     </div>
 
-    <div class="footer-block">
-        <a class="link-alt" href="/"><h3>&#169;<span id="date">20XX</span> Michael Volovar</h3></a>
+    <div class="footer-block wrapper-block">
+        <a class="link-alt" href="/"><h3>&#169;<span id="date">20XX</span> Volovar</h3></a>
 
         <ul class="nav-block">
             <li><a href="//github.com/volovar" target="_blank">github</a></li>
@@ -77,69 +92,7 @@
         </ul>
     </div>
 
-    <script src="//yui.yahooapis.com/3.10.1/build/yui/yui-min.js"></script>
-    <!-- <script type="text/javascript" src="/public/js/dribbble.js"></script> -->
-    <script>
-        var elements = document.getElementsByClassName('feature-button');
-        var colorSet = ['#cccccc', '#ab4c4c', '#4cabab', '#7b4cab'];
-        // var colorNumber = randomizeColor(1, colorSet.length);
-        // var sessionColor = colorSet[colorNumber];
-        var blockColor;
-        var colorCount = 0;
-
-        setColorChange();
-
-        function randomizeColor(min, max) {
-            return Math.floor(Math.random() * (max - min + 1));
-        };
-
-        // shadeColor and blendColor courtesy http://stackoverflow.com/a/13542669
-        function shadeColor(color, percent) {   
-            var f = parseInt(color.slice(1),16),
-                t = percent<0?0:255,
-                p = percent<0?percent*-1:percent,
-                R = f>>16,
-                G = f>>8&0x00FF,
-                B = f&0x0000FF;
-            return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
-        };
-
-        // function blendColors(c0, c1, p) {
-        //     var f=parseInt(c0.slice(1),16),t=parseInt(c1.slice(1),16),R1=f>>16,G1=f>>8&0x00FF,B1=f&0x0000FF,R2=t>>16,G2=t>>8&0x00FF,B2=t&0x0000FF;
-        //     return "#"+(0x1000000+(Math.round((R2-R1)*p)+R1)*0x10000+(Math.round((G2-G1)*p)+G1)*0x100+(Math.round((B2-B1)*p)+B1)).toString(16).slice(1);
-        // };
-
-        function setColorChange() {
-            setInterval(function () {
-                darkenColors();
-            }, 2000);
-        }
-
-        function darkenColors() {
-            for (var i = 0; i < elements.length; i++) {
-                blockColor = shadeColor(colorSet[colorCount], (i * -0.11));
-
-                setDelay(i, blockColor);
-            };
-
-            if (colorCount >= (colorSet.length - 1)) {
-                colorCount = 0;
-            } else {
-                colorCount += 1;
-            }
-        };
-
-        function addColor(count, color) {
-            elements[count].getElementsByTagName('a')[0].style.background = color;
-        };
-
-        function setDelay(i, color) {
-            setTimeout(function() {
-                addColor(i, color);
-            }, (i * 220));
-        }
-    </script>
-
+    <script type="text/javascript" src="/public/js/colorizer.js"></script>
     <script type="text/javascript" src="/public/js/date.js"></script>
     <script type="text/javascript" src="/public/js/ga.js"></script>
 </body>
