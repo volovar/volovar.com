@@ -1,21 +1,12 @@
 var elements = document.getElementsByClassName('feature-button');
-var colorSet = ['#aab5b5', '#3f7da7', '#b864a1', '#4cabab', '#7b4cab', '#33afc4', '#1c6571', '#8a6054'];
+var homeLink = document.getElementsByClassName('home-link');
+var colorSet = ['#aab5b5', '#569ccb', '#b864a1', '#4cabab', '#7b4cab', '#33afc4', '#f17ad1'];
 var colorCount = 0;
 var colorInterval;
 var blockColor;
 
 darkenColors();
 setColorChange();
-
-for (var j = 0; j < elements.length; j++) {
-    elements[j].addEventListener('mouseenter', function (e) {
-        clearInterval(colorInterval);
-    });
-
-    elements[j].addEventListener('mouseleave', function (e) {
-        setColorChange();
-    });
-};
 
 function randomizeColor(min, max) {
     return Math.floor(Math.random() * (max - min + 1));
@@ -39,9 +30,8 @@ function setColorChange() {
 }
 
 function darkenColors() {
-    for (var i = 0; i < elements.length; i++) {
+    for (var i = 0; i < (elements.length + 1); i++) {
         blockColor = shadeColor(colorSet[colorCount], (i * -0.11));
-
         setDelay(i, blockColor);
     };
 
@@ -53,7 +43,11 @@ function darkenColors() {
 };
 
 function addColor(count, color) {
-    elements[count].getElementsByTagName('a')[0].style.background = color;
+    if ((count + 1) == (elements.length + 1)) {
+        homeLink[0].style.color = color;
+    } else {
+        elements[count].getElementsByTagName('a')[0].style.background = color;
+    }
 };
 
 function setDelay(i, color) {
