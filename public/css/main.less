@@ -40,26 +40,27 @@ li {
 
 h1 {
     color: @h1;
-    font-size: 2em;
+    font-size: 1em;
     line-height: 1.25em;
     margin: 0 0 0.25em;
 }
 
 h2 {
-    font-size: 1.5em;
-    line-height: 1.25em;
-    margin: 0;
-}
-
-h3 {
     font-size: 1em;
     line-height: 1.25em;
     margin: 0 0 0.25em;
     text-transform: uppercase;
 }
 
-h4 {
+h3 {
+    font-size: 1em;
     line-height: 1.25em;
+    margin: 0 0 0.25em;
+}
+
+h4 {
+    font-weight: normal;
+    line-height: 1em;
     margin: 0 0 0.75em;
 }
 
@@ -100,6 +101,10 @@ a {
     }
 }
 
+.print-only {
+    display: none;
+}
+
 .wrapper-block {
     .flex-block-center;
     padding: 20px 26px;
@@ -127,6 +132,7 @@ a {
     overflow: hidden;
 
     &.resume-block {
+        .box-sizing(border-box);
         max-width: 800px;
         padding: 0 26px;
         width: 100%;
@@ -143,7 +149,7 @@ a {
 }
 
 .item-block {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
     &:last-child {
         margin-bottom: 0;
