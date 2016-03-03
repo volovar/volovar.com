@@ -1,14 +1,30 @@
 @media (max-width: 660px) {
-    .wrapper-block {
-        padding: 10px 16px;
-    }
-
-    .content-block.resume-block {
+    .page-container {
         padding: 0 16px;
     }
 
+    .wrapper-block {
+        padding: 16px 0;
+    }
+
+    .content-block,
+    .section-block,
+    .content-title {
+        margin-bottom: 20px;
+    }
+
     .layout-block {
+        padding-bottom: 12px;
+        padding-right: 0;
         width: 50%;
+
+        &.layout-block-narrow {
+            width: 100%;
+        }
+
+        &.layout-block-wide {
+            width: 100%;
+        }
 
         .title {
             padding: 18px 16px;

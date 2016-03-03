@@ -15,86 +15,137 @@
 </head>
 
 <body>
-    <div class="header-block wrapper-block">
-        <a class="link-alt" href="/">
-            <h3>Michael Volovar</h3>
-        </a>
+    <div class="page-container">
+        <div class="header-block wrapper-block">
+            <a class="link-alt" style="width: 100%;" href="/">
+                <h3>Michael Volovar</h3>
+            </a>
 
-        <ul class="nav-block">
-            <li><a href="http://github.com/volovar" target="_blank">github</a></li>
-            <li><a class="dribbble" href="http://dribbble.com/volovar">dribbble</a></li>
-            <li><a class="twitter" href="https://twitter.com/volovar">twitter</a></li>
-        </ul>
-    </div>
+            <ul class="nav-block">
+                <li><a href="http://github.com/volovar" target="_blank">github</a></li>
+                <li><a class="dribbble" href="http://dribbble.com/volovar">dribbble</a></li>
+                <li><a class="twitter" href="https://twitter.com/volovar">twitter</a></li>
+                <li><a class="resume" href="/resume.html">r&eacute;sum&eacute;</a></li>
+            </ul>
+        </div>
 
-    <div class="content-block">
-        <div class="layout-block-container">
-            <div class="layout-block feature-button">
-                <a href="http://www.imho.pub" target="_blank">
-                    <span class="title">
-                        <strong>IMHO.pub</strong>
-                        <span class="description">A living publication &rarr;</span>
-                    </span>
-                </a>
-            </div>
+        <div class="content-block">
+            <p style="margin: 0 0 8px;">Hi! I'm Mike Volovar, an engineer and designer focused on making the web more user friendly.</p>
 
-            <div class="layout-block feature-button">
-                <a href="https://www.studyblue.com" target="_blank">
-                    <span class="title">
-                        <strong>StudyBlue</strong>
-                        <span class="description">Flashcard app for web and mobile &rarr;</span>
-                    </span>
-                </a>
-            </div>
-
-            <div class="layout-block feature-button">
-                <a href="https://chrome.google.com/webstore/detail/ocfm-plus/mmchmelglcpjmnlafedmpljlackiilde" target="_blank">
-                    <span class="title">
-                        <strong>OCFM +</strong>
-                        <span class="description">An extension that enhances overcast.fm &rarr;</span>
-                    </span>
-                </a>
-            </div>
-
-            <div class="layout-block feature-button">
-                <a href="http://www.twitch.tv/videonaut" target="_blank">
-                    <span class="title">
-                        <strong>Videonaut</strong>
-                        <span class="description">Live video game broadcasts &rarr;</span>
-                    </span>
-                </a>
-            </div>
-
-            <div class="layout-block feature-button">
-                <a href="http://dribbble.com/volovar" target="_blank">
-                    <span class="title">
-                        <strong>Dribbble</strong>
-                        <span class="description">Random designs and sketches &rarr;</span>
-                    </span>
-                </a>
-            </div>
-
-            <div class="layout-block layout-block-about">
-                <span class="title">
-                    <span class="description">Hi there, I'm Mike Volovar. I'm a front end engineer making things in San Francisco. <a class="home-link" href="/resume.html">R&eacute;sum&eacute; &rarr;</a></span>
-                </span>
+            <div class="layout-block-container feature-button-container">
+                <div class="js-colorized layout-block feature-button"></div>
+                <div class="js-colorized layout-block feature-button"></div>
+                <div class="js-colorized layout-block feature-button"></div>
+                <div class="js-colorized layout-block feature-button"></div>
+                <div class="js-colorized layout-block feature-button"></div>
+                <div class="js-colorized layout-block feature-button"></div>
             </div>
         </div>
-    </div>
 
-    <div class="footer-block wrapper-block">
-        <a class="link-alt" href="/"><h3>&#169;<span id="date">20XX</span> Volovar</h3></a>
+        <div class="content-block">
+            <h1 class="content-title">Projects</h1>
 
-        <ul class="nav-block">
-            <li><a href="//github.com/volovar" target="_blank">github</a></li>
-            <li><a href="http://dribbble.com/volovar" target="_blank">dribbble</a></li>
-            <li><a href="https://twitter.com/volovar" target="_blank">twitter</a></li>
-        </ul>
+            <!-- imho section -->
+            <div class="layout-block-container content-block">
+                <div class="layout-block layout-block-narrow">
+                    <a class="link-alt" href="http://www.imho.pub/about" target="_blank">
+                        <strong>IMHO</strong>
+                    </a>
+                </div>
+
+                <div class="layout-block layout-block-wide">
+                    <p>
+                        A project started between a friend and myself. We wanted to make a "Living Magazine Without any Baggage", where posts would stay alive (and visible) on the site based on the number of likes they received. The project was built in Node using Express and Mongo. It gave me a chance to learn those technologies as well as getting into API design.
+                    </p>
+                    <a href="http://www.imho.pub/about" target="_blank">Visit Site &rarr;</a>
+                </div>
+            </div>
+
+            <!-- studyblue section -->
+            <div class="layout-block-container content-block">
+                <div class="layout-block layout-block-narrow">
+                    <a class="link-alt" href="/work/studyblue.html">
+                        <strong>StudyBlue</strong>
+                    </a>
+                </div>
+
+                <div class="layout-block layout-block-wide">
+                    <p>
+                        StudyBlue is a startup focused on helping students learn with a flashcard app for web and mobile. While there, I was the go-between for design and engineering and was part of a complete site redesign.
+                    </p>
+                    <a href="/work/studyblue.html">Read More</a>
+                </div>
+            </div>
+
+            <!-- ocfm section -->
+            <div class="layout-block-container content-block">
+                <div class="layout-block layout-block-narrow">
+                    <a class="link-alt" href="/work/ocfm.html">
+                        <strong>OCFM +</strong>
+                    </a>
+                </div>
+
+                <div class="layout-block layout-block-wide">
+                    <p>
+                        A Chrome extension that overhauls and enhances the look of overcast.fm, a site that I really enjoy but always thought could have some better UX. This project started as a way for me to learn how to build Chrome extensions.
+                    </p>
+                    <a href="/work/ocfm.html">Read More</a>
+                </div>
+            </div>
+
+            <!-- vouch section -->
+            <div class="layout-block-container content-block">
+                <div class="layout-block layout-block-narrow">
+                    <a class="link-alt" href="https://vouch.com" target="_blank">
+                        <strong>Vouch</strong>
+                    </a>
+                </div>
+
+                <div class="layout-block layout-block-wide">
+                    <p>
+                        As part of the web team at Vouch, I worked on sign-in, sponsorship, and document upload flows. The role involved some interaction with ruby and using coffeescript and backbone for the front end.
+                    </p>
+                    <a href="https://vouch.com" target="_blank">Visit Site &rarr;</a>
+                </div>
+            </div>
+
+            <!-- writing section -->
+            <h1 class="content-title">Writing</h1>
+
+            <div class="layout-block-container content-block">
+                <div class="layout-block layout-block-full layout-block-flex" style="display: flex;">
+                    <strong>A few of the nice parts of Music</strong>
+                    <a href="https://medium.com/@volovar/a-few-of-the-nice-parts-of-music-ba8387489b96#.lb2rwx5gk" target="_blank">Read on Medium &rarr;</a>
+                </div>
+            </div>
+
+            <!-- illustrations section -->
+            <!-- <h1 class="content-title">Illustrations</h1>
+
+            <div class="layout-block-container content-block">
+                <div class="layout-block layout-block-full layout-block-flex" style="display: flex;">
+                    <strong>Vector drawings</strong>
+                    <a href="" target="_blank">View</a>
+                </div>
+
+                <div class="layout-block layout-block-full layout-block-flex" style="display: flex;">
+                    <strong>Sketches</strong>
+                    <a href="" target="_blank">View</a>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="footer-block wrapper-block">
+            <p>&#169;<span id="date">20XX</span> volovar.com</p>
+        </div>
     </div>
 
     <script type="text/javascript" src="/public/js/colorizer.js"></script>
     <script type="text/javascript" src="/public/js/date.js"></script>
     <script type="text/javascript" src="/public/js/ga.js"></script>
 </body>
-<!--|/-->
+<!--    //||  //||  //         -->
+<!--   // || // || //          -->
+<!--  //  ||//  ||//           -->
+<!-- //         ||/ M M X V I  -->
 </html>

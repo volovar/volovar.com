@@ -1,4 +1,4 @@
-var elements = document.getElementsByClassName('feature-button');
+var elements = document.getElementsByClassName('js-colorized');
 var homeLink = document.getElementsByClassName('home-link');
 var colorSet = ['#aab5b5', '#569ccb', '#b864a1', '#4cabab', '#7b4cab', '#33afc4', '#f17ad1'];
 var colorCount = 0;
@@ -24,13 +24,13 @@ function shadeColor(color, percent) {
 };
 
 function setColorChange() {
-    colorInterval = setInterval(function () {
+    var colorInterval = setInterval(function () {
         darkenColors();
     }, 2200);
 }
 
 function darkenColors() {
-    for (var i = 0; i < (elements.length + 1); i++) {
+    for (var i = 0; i < (elements.length); i++) {
         blockColor = shadeColor(colorSet[colorCount], (i * -0.11));
         setDelay(i, blockColor);
     };
@@ -42,16 +42,10 @@ function darkenColors() {
     }
 };
 
-function addColor(count, color) {
-    if ((count + 1) == (elements.length + 1)) {
-        homeLink[0].style.color = color;
-    } else {
-        elements[count].getElementsByTagName('a')[0].style.background = color;
-    }
-};
-
 function setDelay(i, color) {
-    setTimeout(function() {
-        addColor(i, color);
+    clearTimeout(colorTimer);
+
+    var colorTimer = setTimeout(function() {
+        elements[i].style.background = color;
     }, (i * 220));
 }
