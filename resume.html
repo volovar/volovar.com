@@ -2,186 +2,252 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="mike v resume">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="mike v resume">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <title>volovar.com</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <title>volovar.com</title>
 
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" media="all" href="/public/css/main.css" />
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" media="all" href="/src/css/main.css" />
 
 </head>
 
 <body>
-    <div class="page-container">
-        <div class="header-block wrapper-block">
-            <a class="link-alt" style="width: 100%;" href="/">
-                <h3>Michael Volovar</h3>
-            </a>
+  <div class="page-container">
+    <div class="header-block wrapper-block">
+      <svg xmlns:vlogo="http://www.w3.org/2000/svg" class="v-logo" width="140px" viewBox="0 0 660 860">
+        <defs>
+          <filter id="glow" width="200%" height="200%" x="-20%" y="-20%">
+            <feGaussianBlur stdDeviation="16" result="glow" />
+            <feMergeNode in="glow" />
+            <feMergeNode in="glow" />
+          </filter>
 
-            <ul class="nav-block no-print">
-                <li><a href="http://github.com/volovar" target="_blank">github</a></li>
-                <li><a class="dribbble" href="http://dribbble.com/volovar">dribbble</a></li>
-                <li><a class="twitter" href="https://twitter.com/volovar">twitter</a></li>
-                <li><a class="resume" href="/resume.html">r&eacute;sum&eacute;</a></li>
-            </ul>
-        </div>
+          <filter id="glown-out" width="200%" height="200%" x="-20%" y="-20%">
+            <feGaussianBlur stdDeviation="32" result="glow" />
+            <feMergeNode in="glow" />
+            <feMergeNode in="glow" />
+          </filter>
 
-        <div class="content-block resume-block">
-            <h1 class="content-title">Front End Engineer &amp; Designer</h1>
+          <style>
+            .glow {
+              filter: url(#glow);
+            }
 
-            <div class="section-block">
-                <ul class="section-list">
-                    <li><a href="mailto:michaelvolovar@gmail.com">michaelvolovar@gmail.com</a></li>
-                    <li><a href="http://www.volovar.com/">volovar.com</a></li>
-                    <li class="print-only">github.com/volovar</li>
-                    <li class="print-only">dribbble.com/volovar</li>
-                    <li class="no-print"><a href="/public/docs/volovar-resume-0716.pdf" target="_blank">download PDF</a></li>
-                </ul>
-            </div>
+            .v-logo:hover .glow {
+              filter: url(#glown-out);
+            }
 
-            <div class="section-block">
-                <h2 class="section-title">Skills</h2>
+            .v-element-shadow {
+              fill: #181820;
+            }
 
-                <ul class="section-list">
-                    <li>HTML</li>
-                    <li>CSS, LESS, SASS</li>
-                    <li>Javascript, jQuery</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                    <li>Photoshop</li>
-                    <li>Final Cut Pro</li>
-                </ul>
-            </div>
+            .v-element-a {
+              /*fill: transparent;*/
+              /*stroke: #f94793;*/
+              /*stroke-width: 24px;*/
+              /*stroke-linejoin: round;*/
+              transition: all 500ms linear;
+            }
 
-            <div class="section-block">
-                <h1 class="content-title">Work</h1>
+            .v-element-b {
+              fill: #14c4f3;
+              transition: all 500ms linear;
+            }
+          </style>
+        </defs>
 
-                <div class="item-block work-block">
-                    <h2>Engineer</h2>
-                    <em><a href="https://vouch.com" target="_blank">Vouch</a></em>
-                    <h4>October 2015 &ndash; February 2016</h4>
+        <title>V mark</title>
 
-                    <ul class="section-list">
-                        <li>Implemented new onboarding designs that increased conversion by 30%</li>
-                        <li>Added features to front end site and api using javascript, css, and ruby</li>
-                        <li>Began restructuring of front end code style guide</li>
-                        <li>Created a new responsive document upload feature with Sass</li>
-                    </ul>
-                </div>
+        <g transform="translate(46, 46)">
+          <g id="js-v-element-shadow" class="v-element-shadow">
+            <polygon vlogo:step="2" points="407.51 181.63 438.51 245.63 274.51 515.63 200.51 515.63 407.51 181.63"/>
 
-                <div class="item-block work-block">
-                    <h2>Front End Engineer</h2>
-                    <em><a href="https://www.studyblue.com/" target="_blank">StudyBlue</a></em>
-                    <h4>October 2013 &ndash; August 2015</h4>
+            <path vlogo:step="4" d="M532.51,189.63s-2,85.44-2,87a6,6,0,0,1-1,3l-192,332s-1.83,2.69-3,3-8,2-8,2l-56,13Z"/>
+          </g>
 
-                    <ul class="section-list">
-                      <li>Increased clickthrough rate to "pro" upgrade page through a redesigned main navigation</li>
-                      <li>Overhauled search to provide a more enjoyable user experience</li>
-                      <li>Implemented features using LESS, jQuery, and Backbone</li>
-                      <li>Worked on UX designs and created the CSS for a major site redesign</li>
-                      <li>Shifted responsibilities between engineering and design to fit the needs of the team</li>
-                    </ul>
-                </div>
+          <g id="js-v-logo" class="v-logo-body" data-name="v mark">
+            <g id="js-v-element-a" class="v-element-a" style="fill: #f94793;">
+              <path vlogo:step="1" class="glow" d="M6.51,211.63l184,297s3.17,6.17,9,7,10-6,10-6l197-322a8.83,8.83,0,0,0,1-6c-1-4-15-13-15-13l-247-164s-10.33-6.67-14-4-2,10-2,10l45.12,168s.69,3.06-1.12,5-7,2-7,2h-148s-15.33-.67-18,6S6.51,211.63,6.51,211.63Z"/>
 
-                <div class="item-block work-block">
-                    <h2>Front End Developer</h2>
-                    <em><a href="http://www.vodori.com/" target="_blank">Vodori</a></em>
-                    <h4 class="date-block">February 2012 &ndash; October 2013</h4>
+              <path vlogo:step="1" d="M6.51,211.63l184,297s3.17,6.17,9,7,10-6,10-6l197-322a8.83,8.83,0,0,0,1-6c-1-4-15-13-15-13l-247-164s-10.33-6.67-14-4-2,10-2,10l45.12,168s.69,3.06-1.12,5-7,2-7,2h-148s-15.33-.67-18,6S6.51,211.63,6.51,211.63Z"/>
+            </g>
 
-                    <ul class="section-list">
-                        <li>Reduced CSS of Pepper content management system to drastically decrease site load times</li>
-                        <li>Lead the switch from CSS to LESS to make styling more efficient</li>
-                        <li>Increased responsibilities from LESS / CSS developer to writing javascript widgets to remove workload from other engineers</li>
-                        <li>Created responsive sites that supported all modern browsers back to Internet Explorer 7 to ensure client satisfaction and market reach</li>
-                    </ul>
-                </div>
+            <g id="js-v-element-b" class="v-element-b" style="fill: #14c4f3;">
+              <path class="glow" vlogo:step="3" d="M223.51,564.63a12.06,12.06,0,0,1-1-6,15.54,15.54,0,0,1,2-6l218-360s2.67-4.92,4-6,6-1,6-1h72s7.92.08,8,4a19.64,19.64,0,0,1-2,8l-250,424s-5,7.67-10,8-10-7-10-7Z"/>
 
-                <div class="item-block work-block">
-                    <h2>Web Developer</h2>
-                    <em><a href="http://aeodesign.com/" target="_blank">AEO Design</a></em>
-                    <h4>July 2011 &ndash; February 2012</h4>
+              <path vlogo:step="3" d="M223.51,564.63a12.06,12.06,0,0,1-1-6,15.54,15.54,0,0,1,2-6l218-360s2.67-4.92,4-6,6-1,6-1h72s7.92.08,8,4a19.64,19.64,0,0,1-2,8l-250,424s-5,7.67-10,8-10-7-10-7Z"/>
+            </g>
+          </g>
+        </g>
+      </svg>
 
-                    <ul class="section-list">
-                        <li>Created wordpress backed sites for small businesses, increasing market reach while decreasing costs of development</li>
-                        <li>Managed client education to help clients to use their site's content management system</li>
-                    </ul>
-                </div>
+      <a class="logo" style="width: 100%;" href="/">
+        <h3 class="content-title">Mike Volovar</h3>
+      </a>
 
-                <div class="item-block work-block">
-                    <h2>Graphic Designer</h2>
-                    <em><a href="http://www.magnapowertrain.com/" target="_blank">Magna Powertrain USA</a></em>
-                    <h4 class="date-block">March 2009 &ndash; September 2011</h4>
+      <h1 class="content-title">Front End Engineer &amp; Designer</h1>
 
-                    <ul class="section-list">
-                        <li>Created animations, videos, graphics, and brochures for customer events, increasing customer interest and engagement</li>
-                        <li>Managed relations with external vendors, decreasing printing and event costs</li>
-                        <li>Redesigned company internal magazine to increase employee's company knowledge</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section-block print-break">
-                <h1 class="content-title">Projects</h1>
-
-                <div class="item-block work-block">
-                    <h2>Creator</h2>
-                    <em><a href="http://www.imho.pub/" target="_blank">IMHO.pub</a></em>
-                    <h4>February 2015 &ndash; Present</h4>
-
-                    <ul class="section-list">
-                        <li>Public writing platform</li>
-                        <li>Built the site based on Node, Express, and MongoDB </li>
-                        <li>Wrote all HTML, CSS, and javascript</li>
-                    </ul>
-                </div>
-
-                <div class="item-block work-block">
-                    <h2>Creator</h2>
-                    <em><a href="https://github.com/volovar/ocfm-plus" target="_blank">OCFM plus</a></em>
-                    <h4>June 2015</h4>
-
-                    <ul class="section-list">
-                        <li>Browser extension that enhances the design and usability of overcast.fm</li>
-                        <li>Learned how to create Chrome extensions</li>
-                        <li>Wrote all HTML, CSS, and javascript</li>
-                    </ul>
-                </div>
-
-                <div class="item-block work-block">
-                    <h2>Broadcaster</h2>
-                    <em><a href="http://www.twitch.tv/videonaut" target="_blank">Twitch.tv / Videonaut</a></em>
-                    <h4>September 2014 &ndash; Present</h4>
-
-                    <ul class="section-list">
-                        <li>Daily broadcast on Twitch.tv</li>
-                        <li>Managed channel schedule and moderation</li>
-                        <li>Created all on-screen and site graphics</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section-block">
-                <h1 class="content-title">Education</h1>
-
-                <ul class="section-list">
-                    <li>Bachelor of Fine Arts in Animation &amp; Digital Media</li>
-                    <li>College For Creative Studies</li>
-                    <li>Detroit, Michigan</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-block wrapper-block no-print">
-            <p>&#169;<span id="date">20XX</span> volovar.com</p>
-        </div>
+      <ul class="nav-block">
+        <li><a class="no-print" href="http://github.com/volovar" target="_blank">github</a></li>
+        <li><a class="no-print" href="http://dribbble.com/volovar" target="_blank">dribbble</a></li>
+        <li><a class="no-print" href="https://twitter.com/volovar" target="_blank">twitter</a></li>
+        <li><a href="mailto:michaelvolovar@gmail.com">michaelvolovar@gmail.com</a></li>
+        <li class="print-only"><a href="http://www.volovar.com/">volovar.com</a></li>
+        <li class="print-only">github.com/volovar</li>
+        <li class="print-only">dribbble.com/volovar</li>
+        <li class="no-print"><a href="/src/docs/volovar-resume-0716.pdf" target="_blank">PDF</a></li>
+      </ul>
     </div>
 
-    <script type="text/javascript" src="/public/js/date.js"></script>
-    <script type="text/javascript" src="/public/js/ga.js"></script>
+    <div class="content-block resume-block">
+      <div class="section-block">
+        <h2 class="content-title">Skills</h2>
+
+        <ul class="section-list">
+          <li>HTML, Handlebars</li>
+          <li>CSS, LESS, SASS</li>
+          <li>Javascript</li>
+          <li>jQuery</li>
+          <li>Node.js</li>
+        </ul>
+
+        <ul class="section-list">
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+          <li>Final Cut Pro</li>
+          <li>React</li>
+        </ul>
+      </div>
+
+      <div class="section-block">
+        <h1 class="content-title">Experience</h1>
+
+        <div class="item-block work-block">
+          <h2>Engineer</h2>
+          <em><a href="https://vouch.com" target="_blank">Vouch</a></em>
+          <h4>October 2015 &ndash; February 2016</h4>
+
+          <ul class="section-list">
+            <li>Implemented new onboarding designs that increased conversion by 30%</li>
+            <li>Added features to front end site and api using javascript, css, and ruby</li>
+            <li>Began restructuring of front end code style guide</li>
+            <li>Created a new responsive document upload feature with Sass</li>
+          </ul>
+        </div>
+
+        <div class="item-block work-block">
+          <h2>Front End Engineer</h2>
+          <em><a href="https://www.studyblue.com/" target="_blank">StudyBlue</a></em>
+          <h4>October 2013 &ndash; August 2015</h4>
+
+          <ul class="section-list">
+            <li>Increased clickthrough rate to "pro" upgrade page through a redesigned main navigation</li>
+            <li>Overhauled search to provide a more enjoyable user experience</li>
+            <li>Implemented features using LESS, jQuery, and Backbone</li>
+            <li>Worked on UX designs and created the CSS for a major site redesign</li>
+            <li>Shifted responsibilities between engineering and design to fit the needs of the team</li>
+          </ul>
+        </div>
+
+        <div class="item-block work-block">
+          <h2>Front End Developer</h2>
+          <em><a href="http://www.vodori.com/" target="_blank">Vodori</a></em>
+          <h4 class="date-block">February 2012 &ndash; October 2013</h4>
+
+          <ul class="section-list">
+            <li>Reduced CSS of Pepper content management system to drastically decrease site load times</li>
+            <li>Lead the switch from CSS to LESS to make styling more efficient</li>
+            <li>Increased responsibilities from LESS / CSS developer to writing javascript widgets to remove workload from other engineers</li>
+            <li>Created responsive sites that supported all modern browsers back to Internet Explorer 7 to ensure client satisfaction and market reach</li>
+          </ul>
+        </div>
+
+        <div class="item-block work-block">
+          <h2>Web Developer</h2>
+          <em><a href="http://aeodesign.com/" target="_blank">AEO Design</a></em>
+          <h4>July 2011 &ndash; February 2012</h4>
+
+          <ul class="section-list">
+            <li>Created wordpress backed sites for small businesses, increasing market reach while decreasing costs of development</li>
+            <li>Managed client education to help clients to use their site's content management system</li>
+          </ul>
+        </div>
+
+        <div class="item-block work-block">
+          <h2>Graphic Designer</h2>
+          <em><a href="http://www.magnapowertrain.com/" target="_blank">Magna Powertrain USA</a></em>
+          <h4 class="date-block">March 2009 &ndash; September 2011</h4>
+
+          <ul class="section-list">
+            <li>Created animations, videos, graphics, and brochures for customer events, increasing customer interest and engagement</li>
+            <li>Managed relations with external vendors, decreasing printing and event costs</li>
+            <li>Redesigned company internal magazine to increase employee's company knowledge</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-block print-break">
+        <h1 class="content-title">Projects</h1>
+
+        <div class="item-block work-block">
+          <h2>Creator</h2>
+          <em><a href="http://www.imho.pub/" target="_blank">IMHO.pub</a></em>
+          <h4>February 2015 &ndash; Present</h4>
+
+          <ul class="section-list">
+            <li>Public writing platform</li>
+            <li>Built the site based on Node, Express, and MongoDB </li>
+            <li>Wrote all HTML, CSS, and javascript</li>
+          </ul>
+        </div>
+
+        <div class="item-block work-block">
+          <h2>Creator</h2>
+          <em><a href="https://github.com/volovar/ocfm-plus" target="_blank">OCFM plus</a></em>
+          <h4>June 2015</h4>
+
+          <ul class="section-list">
+            <li>Browser extension that enhances the design and usability of overcast.fm</li>
+            <li>Learned how to create Chrome extensions</li>
+            <li>Wrote all HTML, CSS, and javascript</li>
+          </ul>
+        </div>
+
+        <div class="item-block work-block">
+          <h2>Broadcaster</h2>
+          <em><a href="http://www.twitch.tv/videonaut" target="_blank">Twitch.tv / Videonaut</a></em>
+          <h4>September 2014 &ndash; Present</h4>
+
+          <ul class="section-list">
+            <li>Daily broadcast on Twitch.tv</li>
+            <li>Managed channel schedule and moderation</li>
+            <li>Created all on-screen and site graphics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <h1 class="content-title">Education</h1>
+
+        <ul class="section-list">
+          <li>Bachelor of Fine Arts in Animation &amp; Digital Media</li>
+          <li>College For Creative Studies</li>
+          <li>Detroit, Michigan</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-block wrapper-block no-print">
+      <p>&#169;<span id="date">20XX</span> volovar.com</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/src/js/date.js"></script>
+  <script type="text/javascript" src="/src/js/ga.js"></script>
 </body>
 <!--|/-->
 </html>

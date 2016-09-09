@@ -1,5 +1,5 @@
 // font variables
-@sans-serif: -apple-system, BlinkMacSystemFont, Roboto, 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@sans-serif: "Rubik", -apple-system, BlinkMacSystemFont, Roboto, 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // color variables
 @red-base: #ab4c4c;
@@ -25,14 +25,21 @@
 @grey-dark: #7f7f7f;
 @grey-dark-2: #414141;
 
-@body-bg: @grey-base;
-@h1: @grey-dark;
-@link: @grey-dark;
-@link-hover: @maroon-base;
-@link-alt: @grey-dark-2;
-@link-alt-hover: @maroon-base;
-@text-main: @grey-dark-2;
-@text-light: @grey-dark;
+// TODO change names
+@pink: #f94793;
+@blue: #14c4f3;
+@yellow: #feb31c;
+
+@new-grey-dark: #3d3a3a;
+@new-grey-light: #dddada;
+
+@body-bg: @new-grey-dark;
+@text-main: @new-grey-light;
+@text-link: @text-main;
+@text-link-hover: @pink;
+@text-link-alt: @text-main;
+@text-link-alt-hover: @pink;
+@text-print: @new-grey-dark;
 
 // other variables
 @speed: 120ms;
@@ -61,6 +68,12 @@
     -moz-box-sizing: @args;
     -webkit-box-sizing: @args;
     box-sizing: @args;
+}
+
+.clip-path(@args) {
+  -moz-clip-path: @args;
+  -webkit-clip-path: @args;
+  clip-path: @args;
 }
 
 .flex(@arg1, @arg2, @arg3) {

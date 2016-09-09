@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik:400,700,700i';
 @import url("mixins.less");
 
 body {
@@ -64,18 +65,18 @@ h4 {
 }
 
 a {
-    color: @link;
+    color: @text-link;
     text-decoration: none;
     .transition(color @speed linear);
 
     &:hover,
     &:focus {
-        color: @link-hover;
+        color: @text-link-hover;
     }
 
     &.home-link {
         .border-radius(4px);
-        color: @link-alt;
+        color: @text-link-alt;
         display: inline-block;
         padding: 0 6px;
         .transition(background @speed linear~',' color 440ms linear);
@@ -87,11 +88,11 @@ a {
     }
 
     &.link-alt {
-        color: @link-alt;
+        color: @text-link-alt;
 
         &:hover,
         &:focus {
-            color: @link-alt-hover;
+            color: @text-link-alt-hover;
         }
     }
 
@@ -99,6 +100,15 @@ a {
         margin: 0;
     }
 }
+
+.v-mark {
+  * {
+    .transition(all 520ms linear);
+  }
+}
+
+// clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+// -webkit-clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 
 .decorated-image {
     border: 1px solid @grey-mid;
@@ -136,12 +146,12 @@ a {
     }
 
     a {
-        color: @text-light;
+      color: @text-link;
         display: block;
         padding: 8px 12px;
 
         &:hover {
-            color: @link-alt-hover;
+            color: @text-link-alt-hover;
         }
     }
 }
@@ -157,9 +167,9 @@ a {
 
 .content-title {
     border-bottom: 1px solid @grey-mid;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 1.167em;
     padding-bottom: 4px;
 }
 
