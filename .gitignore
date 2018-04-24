@@ -1,6 +1,2 @@
-#ignore intellij + mac system files
-.idea
+node_modules
 .DS_store
-
-#site build output
-volovarCom_update/
