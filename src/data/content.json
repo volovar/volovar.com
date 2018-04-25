@@ -1,0 +1,109 @@
+{
+    "dominos": {
+        "title": "Domino's Pizza",
+        "sections": []
+    },
+    "imho": {
+        "title": "IMHO.pub",
+        "sections": [
+            {
+                "title": "About",
+                "description": "IMHO.pub is a community blog platform structured like a magazine, designed and built by myself and one of my good friends. Other people's likes give a post life and prolong it's time on the site, until it may eventually be archived in that month's issue.",
+                "link": {
+                    "text": "Visit Site",
+                    "url": "http://www.imho.pub/about"
+                },
+                "images": [
+                    "/public/images/screens/imhopub/imho-about.png"
+                ]
+            },
+            {
+                "images": [
+                    "/public/images/screens/imhopub/imho-post.png"
+                ]
+            },
+            {
+                "images": [
+                    "/public/images/screens/imhopub/imho-profile.png"
+                ]
+            }
+        ]
+    },
+    "studyblue": {
+        "title": "StudyBlue",
+        "sections": [
+            {
+                "title": "Site Redesign",
+                "description": "I joined StudyBlue right at the beginning of a complete site redesign. The goal was to update the UI from a dark color scheme to a light one, and create new UX to make the site easier to use. My role began as a UX Designer writing most of the CSS and expanded into a front end engineering role as I took on more responsibilities.",
+                "link": {
+                    "text": "Visit Site",
+                    "url": "https://www.studyblue.com"
+                },
+                "images": [
+                    "/public/images/screens/sb/sb-home.png",
+                    "/public/images/screens/sb/sb-editor.png"
+                ]
+            },
+            {
+                "title": "Search",
+                "description": "The search view was a particularly large beast to tackle. Originally, the search was separated into three pages, one for materials, classes, and people. For the new version, I wanted to condense everything to one page focused on classes with additional pages to view more results for classes and people.",
+                "images": [
+                    "/public/images/sketches/sb/sb-sketch-search-a.jpg",
+                    "/public/images/sketches/sb/sb-sketch-search-b.jpg",
+                    "/public/images/screens/sb/sb-search-b.png"
+                ]
+            },
+            {
+                "title": "Profile",
+                "description": "User information is displayed in a popup since it can be seen in multiple places and we didn't want to move away from the currently viewed page. Below are images of one of the initial sketches as well as the finished popup.",
+                "images": [
+                    "/public/images/sketches/sb/sb-sketch-profile-a.jpg",
+                    "/public/images/screens/sb/sb-user-popup.png"
+                ]
+            }
+        ]
+    },
+    "ocfm": {
+        "title": "OCFM +",
+        "sections": [
+            {
+                "title": "Chrome Extension",
+                "description": "Overcast.fm is my favorite podcast site (the app is good too!) but I thought there were a few usability tweaks that would make the site better. It's very much a mobile first site, and the desktop version is hindered by that. OCFM + was born out of my interest in Chrome extensions and making a better experience for myself.",
+                "link": {
+                    "text": "View on the Chrome store",
+                    "url": "https://chrome.google.com/webstore/detail/ocfm-plus/mmchmelglcpjmnlafedmpljlackiilde"
+                },
+                "images": [
+                    "/public/images/screens/ocfm/ocfm-home-plus.png",
+                    "/public/images/screens/ocfm/ocfm-podcast-list-plus.png"
+                ]
+            },
+            {
+                "title": "Process",
+                "description": "This project was quick and fairly simple. It began as many of my personal projects, with very simple sketches and was built in-browser. I'm more hands-on when it comes to writing CSS and enjoy working directly in the browser when figuring out the perfect design.",
+                "images": [
+                    "/public/images/sketches/ocfm/ocfm-sketch-a.jpg",
+                    "/public/images/sketches/ocfm/ocfm-sketch-b.jpg"
+                ]
+            },
+            {
+                "title": "Player",
+                "description": "One of the main features of a podcast site is the media player, and that was one of my focuses. The vertical player of the original site (shown first below) works well on a vertical screen, but leaves too much negative space on desktop. The OCFM + version fixes this (shown second below) and uses media queries to rearrange for small screens.",
+                "subsections": [
+                    {
+                        "title": "Original",
+                        "images": [
+                            "/public/images/screens/ocfm/ocfm-player-og.jpg"
+                        ]
+                    },
+                    {
+                        "title": "Enhanced",
+                        "images": [
+                            "/public/images/screens/ocfm/ocfm-player-plus.jpg"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

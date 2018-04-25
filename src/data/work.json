@@ -2,19 +2,18 @@
     "dominos": {
         "title": "Domino's Pizza",
         "description": "",
-        "url": "",
+        "url": "/dominos",
         "order": 1
     },
     "vouch": {
         "title": "Vouch",
-        "description": "StudyBlue is a startup focused on helping students learn with a flashcard app for web and mobile. While there, I was the go-between for design and engineering and was part of a complete site redesign.",
-        "url": "/work/vouch.html",
+        "description": "As part of the web team at Vouch, I worked on sign-in, sponsorship, and document upload flows. The role involved some interaction with ruby and using coffeescript and backbone for the front end.",
         "order": 2
     },
     "studyblue": {
         "title": "StudyBlue",
         "description": "StudyBlue is a startup focused on helping students learn with a flashcard app for web and mobile. While there, I was the go-between for design and engineering and was part of a complete site redesign.",
-        "url": "/work/studyblue.html",
+        "url": "/studyblue",
         "order": 3
     }
 }

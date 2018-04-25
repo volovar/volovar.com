@@ -5,7 +5,8 @@ module.exports = {
     entry: resolve(__dirname, 'src/index.js'),
     output: {
         filename: '[name].bundle.js',
-        path: resolve(__dirname, 'build')
+        path: resolve(__dirname, 'build'),
+        publicPath: '/'
     },
     mode: 'development',
     module: {
@@ -23,6 +24,7 @@ module.exports = {
         })
     ],
     devServer: {
-        port: 9112
+        port: 9112,
+        historyApiFallback: true
     }
 }
