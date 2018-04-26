@@ -7,12 +7,19 @@ import content from '../data/content.json'
 const ContentPage = ({ match }) => {
     const data = content[match.params.name]
 
-    return (
-        <div>
-            <h1 className="content-title">{ data.title }</h1>
+    return typeof data === 'undefined'
+        ? (<Redirect to='/404' />)
+        : (<div>
+            <h1>{ data.title }</h1>
 
-            <div className="layout-block-container content-block">
-                { data.sections.map((section, i) => (<ContentSection { ...section } key={ i } />)) }
+            <div>
+                {
+                    data.sections.map(
+                        (section, i) => (
+                            <ContentSection { ...section } showHr={ i + 1 < data.sections.length } key={ i } />
+                        )
+                    )
+                }
             </div>
         </div>
     )

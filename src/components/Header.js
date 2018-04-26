@@ -8,11 +8,11 @@ const Header = () => (
             <Link to='/'>Mike Volovar</Link>
         </h3>
 
-        <ul className='nav-block'>
-            <li><a href='http://github.com/volovar' target='_blank'>github</a></li>
-            <li><a className='dribbble' href='http://dribbble.com/volovar' target='_blank'>dribbble</a></li>
-            <li><a className='twitter' href='https://twitter.com/volovar' target='_blank'>twitter</a></li>
-            <li><Link className='resume' to='/resume'>r&eacute;sum&eacute;</Link></li>
+        <ul>
+            <li><a href='https://github.com/volovar' target='_blank'>github</a></li>
+            <li><a href='https://dribbble.com/volovar' target='_blank'>dribbble</a></li>
+            <li><a href='https://twitter.com/volovar' target='_blank'>twitter</a></li>
+            <li><Link to='/resume'>r&eacute;sum&eacute;</Link></li>
         </ul>
     </nav>
 )

@@ -1,16 +1,16 @@
 import React from 'react'
 
-const ContentSection = ({ title, description, link, images }) => (
+const ContentSection = ({ title, description, link, images, showHr }) => (
     <div>
         { title
-        ? <div className='layout-block layout-block-narrow'>
+        ? <div>
             <strong>About</strong>
         </div>
         : null
         }
 
         { description 
-        ? <div className='layout-block layout-block-wide'>
+        ? <div>
             <p>{ description }</p>
             { link 
             ? <a href={ link.url } target='_blank'>{ link.text } &rarr;</a>
@@ -23,10 +23,15 @@ const ContentSection = ({ title, description, link, images }) => (
         { images
         ? images.map(
             (image, i) => (
-            <div className='layout-block layout-block-full' key={ i }>
-                <img className='decorated-image' src={ image } />
+            <div key={ i }>
+                <img src={ image } />
             </div>)
         )
+        : null
+        }
+
+        { showHr
+        ? <hr />
         : null
         }
     </div>
