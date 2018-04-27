@@ -1,31 +1,37 @@
 import React from 'react'
+import { css } from 'emotion'
+import { linkStyle } from '../styles/link'
+
+let linkS = css`
+    display: block;
+    ${ linkStyle }
+`
 
 const ContentSection = ({ title, description, link, images, showHr }) => (
-    <div>
+    <div className={ css`display: grid;` }>
         { title
-        ? <div>
-            <strong>About</strong>
-        </div>
+        ? <strong>About</strong>
         : null
         }
 
         { description 
-        ? <div>
-            <p>{ description }</p>
+        ? <p>
+            { description }
             { link 
-            ? <a href={ link.url } target='_blank'>{ link.text } &rarr;</a>
+            ? <a className={ linkS } href={ link.url } target='_blank'>{ link.text } &rarr;</a>
             : null
             }
-        </div>
+        </p>
         : null
         }
 
         { images
         ? images.map(
             (image, i) => (
-            <div key={ i }>
-                <img src={ image } />
-            </div>)
+            // <div key={ i }>
+                <img className={ css`display: block; max-width: 100%;` } src={ image } key={ i } />
+            // </div>
+            )
         )
         : null
         }

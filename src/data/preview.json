@@ -1,0 +1,42 @@
+{
+    "work": {
+        "dominos": {
+            "title": "Domino's Pizza",
+            "description": "As part of the web team at Vouch, I worked on sign-in, sponsorship, and document upload flows. The role involved some interaction with ruby and using coffeescript and backbone for the front end.",
+            "url": "/dominos",
+            "order": 1
+        },
+        "vouch": {
+            "title": "Vouch",
+            "description": "As part of the web team at Vouch, I worked on sign-in, sponsorship, and document upload flows. The role involved some interaction with ruby and using coffeescript and backbone for the front end.",
+            "order": 2
+        },
+        "studyblue": {
+            "title": "StudyBlue",
+            "description": "StudyBlue is a startup focused on helping students learn with a flashcard app for web and mobile. While there, I was the go-between for design and engineering and was part of a complete site redesign.",
+            "url": "/studyblue",
+            "order": 3
+        }
+    },
+    "projects": {
+        "imho": {
+            "title": "IMHO",
+            "description": "A project started between a friend and myself. We wanted to make a \"Living Magazine Without any Baggage\", where posts would stay alive (and visible) on the site based on the number of likes they received. The project was built in Node using Express and Mongo. It gave me a chance to learn those technologies as well as getting into API design.",
+            "url": "/imho",
+            "order": 1
+        },
+        "ocfm": {
+            "title": "OCFM+",
+            "description": "A Chrome extension that overhauls and enhances the look of overcast.fm, a site that I really enjoy but always thought could have some better UX. This project started as a way for me to learn how to build Chrome extensions.",
+            "url": "/ocfm",
+            "order": 2
+        }
+    },
+    "writing": {
+        "article": {
+            "title": "A few of the nice parts of 🍎Music",
+            "externalUrl": "https://medium.com/@volovar/a-few-of-the-nice-parts-of-music-ba8387489b96#.lb2rwx5gk",
+            "linkText": "Read on Medium →"
+        }
+    }
+}
