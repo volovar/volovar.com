@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { css } from "emotion";
+import { css } from "@emotion/core";
 import { linkStyle } from "../styles/link";
 
 const ContentPreview = ({ title, description, url, linkText, externalUrl }) => {
@@ -13,7 +13,7 @@ const ContentPreview = ({ title, description, url, linkText, externalUrl }) => {
 
             {description ? (
                 <p
-                    className={css`
+                    css={css`
                         line-height: 1.4em;
                         margin: 0;
                     `}
@@ -24,7 +24,7 @@ const ContentPreview = ({ title, description, url, linkText, externalUrl }) => {
 
             {externalUrl ? (
                 <a
-                    className={css`
+                    css={css`
                         display: block;
                         ${linkStyle}
                     `}
@@ -37,7 +37,7 @@ const ContentPreview = ({ title, description, url, linkText, externalUrl }) => {
 
             {url ? (
                 <Link href={url}>
-                    <a className={linkStyle}>{text}</a>
+                    <a css={linkStyle}>{text}</a>
                 </Link>
             ) : null}
         </div>

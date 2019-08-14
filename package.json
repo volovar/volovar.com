@@ -20,11 +20,12 @@
     },
     "homepage": "https://github.com/volovar/volovar.com#readme",
     "dependencies": {
+        "@emotion/babel-preset-css-prop": "^10.0.14",
+        "@emotion/core": "^10.0.15",
         "cross-env": "^5.2.0",
-        "emotion": "^10.0.14",
         "express": "^4.17.1",
-        "next": "^9.0.0",
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6"
+        "next": "^9.0.3",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0"
     }
 }

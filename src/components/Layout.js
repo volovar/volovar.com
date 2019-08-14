@@ -4,12 +4,12 @@ import Footer from "./Footer";
 import Meta from "./Meta";
 import { layoutStyle, bodyStyle } from "../styles/Layout.styles";
 
-const Layout = props => (
+const Layout = ({ children, isHome }) => (
     <>
         <Meta />
-        <div className={layoutStyle}>
-            <Header />
-            <div className={bodyStyle}>{props.children}</div>
+        <div css={layoutStyle}>
+            {!isHome ? <Header /> : null}
+            <div css={bodyStyle}>{children}</div>
             <Footer />
         </div>
     </>

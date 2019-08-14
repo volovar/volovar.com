@@ -1,55 +1,68 @@
-import React from 'react'
-import Section from './Section'
-import { css } from 'emotion'
-import { l, lx } from '../styles/mediaQueries'
+import React from "react";
+import ContentPreview from "./ContentPreview";
+import LinkList from "./LinkList";
+import { css, jsx } from "@emotion/core";
+import { l, lx, m } from "../styles/mediaQueries";
 
-import { projects, work, writing } from '../data/preview'
+import sections from "../data/preview";
+
+let body = css`
+    ${l} {
+        display: grid;
+        grid-gap: 0 3em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    ${lx} {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+`;
+
+let sectionS = css`
+    display: grid;
+    grid-gap: 1.2em 0;
+    margin-bottom: 3em;
+
+    ${m} {
+        grid-gap: 1.2em 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2.8em;
+    }
+`;
+
+let sectionHeaderS = css`
+    margin: 0;
+
+    ${m} {
+        grid-column: 1 / 3;
+    }
+`;
 
 const Home = () => (
     <div>
-        <div className="content-block">
-            <p>Hi! I'm Mike Volovar, an engineer and designer focused on making the web more user friendly.</p>
+        <div>
+            <h1>Volovar.com</h1>
 
-            <div className="layout-block-container feature-button-container">
-                <div className="js-colorized layout-block feature-button"></div>
-                <div className="js-colorized layout-block feature-button"></div>
-                <div className="js-colorized layout-block feature-button"></div>
-                <div className="js-colorized layout-block feature-button"></div>
-                <div className="js-colorized layout-block feature-button"></div>
-                <div className="js-colorized layout-block feature-button"></div>
-            </div>
+            <p>
+                Hi! I'm Mike Volovar, an engineer and designer focused on making
+                the web more user friendly.
+            </p>
+
+            <LinkList />
         </div>
 
-        <div className={ css`
-            ${l} {
-                display: grid;
-                grid-gap: 0 3em;
-                grid-template-columns: 1fr 1fr;
-            }
+        <div css={body}>
+            {sections.map((section, i) => (
+                <div css={sectionS} key={section + i}>
+                    <h1 css={sectionHeaderS}>{section.title}</h1>
 
-            ${lx} {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        ` }>
-            <Section title="Work" data={ work } />
-            <Section title="Projects" data={ projects } />
-            <Section title="Writing" data={ writing } />
-            
-            {/* <!-- <h1 className="content-title">Illustrations</h1>
-
-            <div className="layout-block-container content-block">
-                <div className="layout-block layout-block-full layout-block-flex" style="display: flex;">
-                    <strong>Vector drawings</strong>
-                    <a href="" target="_blank">View</a>
+                    {section.items.map((item, i) => (
+                        <ContentPreview {...item} key={i} />
+                    ))}
                 </div>
-
-                <div className="layout-block layout-block-full layout-block-flex" style="display: flex;">
-                    <strong>Sketches</strong>
-                    <a href="" target="_blank">View</a>
-                </div>
-            </div> --> */}
+            ))}
         </div>
     </div>
-)
+);
 
-export default Home
+export default Home;

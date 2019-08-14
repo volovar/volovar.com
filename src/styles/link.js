@@ -1,5 +1,5 @@
-import { css } from 'emotion'
- 
+import { css } from "@emotion/core";
+
 export const linkStyle = css`
     color: red;
     font-weight: 600;
@@ -8,4 +8,4 @@ export const linkStyle = css`
     &:hover {
         color: maroon;
     }
-`
+`;

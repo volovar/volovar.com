@@ -1,4 +1,4 @@
-import { css } from "emotion"
+import { css } from "@emotion/core";
 
 export const layoutStyle = css`
     background: #e1e1e1;
@@ -12,11 +12,11 @@ export const layoutStyle = css`
         "footer footer footer footer";
     height: 100%;
     padding: 1em 2em;
-`
+`;
 
 export const bodyStyle = css`
     grid-area: main;
-`
+`;
 
 export const wrapperStyle = css`
     align-items: center;
@@ -24,4 +24,4 @@ export const wrapperStyle = css`
     flex-wrap: wrap;
     justify-content: left;
     padding: 3.75em 0 2.5em;
-`
+`;
