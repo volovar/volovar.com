@@ -1,47 +1,28 @@
 import React from "react";
 import ContentPreview from "./ContentPreview";
 import LinkList from "./LinkList";
-import { css, jsx } from "@emotion/core";
-import { l, lx, m } from "../styles/mediaQueries";
+import { css } from "@emotion/core";
 
 import sections from "../data/preview";
 
-let body = css`
-    ${l} {
+const styles = {
+    container: css`
         display: grid;
-        grid-gap: 0 3em;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    ${lx} {
+        grid-gap: 1em;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-`;
-
-let sectionS = css`
-    display: grid;
-    grid-gap: 1.2em 0;
-    margin-bottom: 3em;
-
-    ${m} {
-        grid-gap: 1.2em 2em;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2.8em;
-    }
-`;
-
-let sectionHeaderS = css`
-    margin: 0;
-
-    ${m} {
-        grid-column: 1 / 3;
-    }
-`;
+    `,
+    content: css`
+        margin-bottom: 3em;
+    `,
+    header: css`
+        border-bottom: 0.2rem solid lightgrey;
+    `
+};
 
 const Home = () => (
     <div>
         <div>
-            <h1>Volovar.com</h1>
+            <h1>Mike Volovar</h1>
 
             <p>
                 Hi! I'm Mike Volovar, an engineer and designer focused on making
@@ -51,17 +32,24 @@ const Home = () => (
             <LinkList />
         </div>
 
-        <div css={body}>
+        <>
             {sections.map((section, i) => (
-                <div css={sectionS} key={section + i}>
-                    <h1 css={sectionHeaderS}>{section.title}</h1>
+                <div css={styles.content} key={section + i}>
+                    <h2 css={styles.header}>{section.title}</h2>
 
-                    {section.items.map((item, i) => (
-                        <ContentPreview {...item} key={i} />
-                    ))}
+                    <div css={styles.container}>
+                        {section.items.map((item, i) => (
+                            <ContentPreview
+                                href={item.url}
+                                description={item.description}
+                                title={item.title}
+                                key={`preview-${i}`}
+                            />
+                        ))}
+                    </div>
                 </div>
             ))}
-        </div>
+        </>
     </div>
 );
 

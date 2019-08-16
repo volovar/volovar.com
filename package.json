@@ -2,11 +2,13 @@
     "name": "volovar.com",
     "version": "6.0.0",
     "description": "volovar.com =================",
-    "main": "index.js",
+    "main": "server.js",
     "scripts": {
         "build": "next build",
-        "dev": "next",
+        "dev": "node .",
+        "preexport": "npm run build",
         "export": "next export",
+        "prestart": "npm run export",
         "start": "next start -p 9004"
     },
     "repository": {

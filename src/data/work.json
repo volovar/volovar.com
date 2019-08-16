@@ -8,7 +8,8 @@
     "vouch": {
         "title": "Vouch",
         "description": "As part of the web team at Vouch, I worked on sign-in, sponsorship, and document upload flows. The role involved some interaction with ruby and using coffeescript and backbone for the front end.",
-        "order": 2
+        "order": 2,
+        "url": "/vouch"
     },
     "studyblue": {
         "title": "StudyBlue",

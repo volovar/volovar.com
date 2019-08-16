@@ -2,53 +2,58 @@ import React from "react";
 import Link from "next/link";
 import { css } from "@emotion/core";
 
-let navListS = css`
-    display: flex;
-    list-style: none;
-    padding: 0;
+let styles = {
+    nav: css`
+        display: flex;
+        list-style: none;
+        padding: 0;
+    `,
+    link: css`
+        color: red;
+        cursor: pointer;
+        font-weight: 600;
+        margin-right: 0.6em;
+        transition: color 120ms linear;
+        text-decoration: underline;
 
-    a {
-        margin-left: 0.6em;
-    }
-`;
-
-let linkS = css`
-    margin-left: 0.6em;
-    color: red;
-    font-weight: 600;
-    transition: color 120ms linear;
-
-    &:hover {
-        color: maroon;
-    }
-`;
+        &:hover {
+            color: maroon;
+        }
+    `
+};
 
 const LinkList = () => (
-    <ul css={navListS}>
+    <ul css={styles.nav}>
         <li>
-            <Link href="https://github.com/volovar">
-                <a css={linkS} target="_blank">
-                    github
-                </a>
-            </Link>
+            <a
+                css={styles.link}
+                href="https://github.com/volovar"
+                target="_blank"
+            >
+                github
+            </a>
         </li>
         <li>
-            <Link href="https://dribbble.com/volovar">
-                <a css={linkS} target="_blank">
-                    dribbble
-                </a>
-            </Link>
+            <a
+                css={styles.link}
+                href="https://dribbble.com/volovar"
+                target="_blank"
+            >
+                dribbble
+            </a>
         </li>
         <li>
-            <Link href="https://twitter.com/volovar">
-                <a css={linkS} target="_blank">
-                    twitter
-                </a>
-            </Link>
+            <a
+                css={styles.link}
+                href="https://twitter.com/volovar"
+                target="_blank"
+            >
+                twitter
+            </a>
         </li>
         <li>
             <Link href="/resume">
-                <a css={linkS}>resume</a>
+                <a css={styles.link}>resume</a>
             </Link>
         </li>
     </ul>

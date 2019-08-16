@@ -22,11 +22,8 @@ let sectionHeaderS = css`
         grid-column: 1 / 3;
     }
 `;
-console.log("inside section");
 
 const Section = ({ title, items }) => {
-    console.log(title);
-    console.log(items);
     return (
         <div css={sectionS}>
             <h1 css={sectionHeaderS}>{title}</h1>
