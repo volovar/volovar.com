@@ -5,7 +5,7 @@
     "main": "server.js",
     "scripts": {
         "build": "next build",
-        "dev": "node .",
+        "dev": "next dev",
         "preexport": "npm run build",
         "export": "next export",
         "prestart": "npm run export",

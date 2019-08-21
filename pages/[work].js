@@ -17,4 +17,12 @@ class Index extends Component {
     }
 }
 
-export default Index;
+const Work = ({ name }) => (
+    <Layout>
+        <div>{name}</div>
+    </Layout>
+);
+
+Work.getInitialProps = async ({ query }) => ({ name: query.name });
+
+export default Work;

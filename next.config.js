@@ -3,16 +3,16 @@ module.exports = {
         "/": { page: "/" },
         "/resume": { page: "/resume" },
         "/dominos": {
-            page: "/work",
-            query: { id: "dominos" }
+            page: "/[work]",
+            query: { name: "dominos" }
         },
         "/studyblue": {
-            page: "/work",
-            query: { id: "studyblue" }
+            page: "/[work]",
+            query: { name: "studyblue" }
         },
         "/vouch": {
-            page: "/work",
-            query: { id: "vouch" }
+            page: "/[work]",
+            query: { name: "vouch" }
         }
     })
 };
