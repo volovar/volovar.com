@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { css, Global } from "@emotion/core";
 
 const Meta = () => (
     <>
@@ -15,17 +16,19 @@ const Meta = () => (
             <link rel="icon" type="image/x-icon" href="/favicon.ico" />
             <title>volovar.com</title>
         </Head>
-        <style jsx global>{`
-            body {
-                background: #333;
-                box-sizing: border-box;
-                font-family: "SF Pro", "Segoe UI", "Roboto", "Helvetica Neue",
-                    "Arial", sans-serif;
-                font-size: 100%;
-                margin: 0;
-                padding: 0;
-            }
-        `}</style>
+        <Global
+            styles={css`
+                body {
+                    background: #333;
+                    box-sizing: border-box;
+                    font-family: "SF Pro", "Segoe UI", "Roboto",
+                        "Helvetica Neue", "Arial", sans-serif;
+                    font-size: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+            `}
+        />
     </>
 );
 

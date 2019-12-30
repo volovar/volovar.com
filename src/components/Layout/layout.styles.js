@@ -1,6 +1,6 @@
 import { css } from "@emotion/core";
 
-export const layoutStyle = css`
+export const layoutCss = css`
     background: #e1e1e1;
     box-sizing: border-box;
     display: grid;
@@ -14,14 +14,6 @@ export const layoutStyle = css`
     padding: 1em 2em;
 `;
 
-export const bodyStyle = css`
+export const bodyCss = css`
     grid-area: main;
-`;
-
-export const wrapperStyle = css`
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding: 3.75em 0 2.5em;
 `;

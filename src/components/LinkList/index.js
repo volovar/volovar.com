@@ -1,33 +1,14 @@
 import React from "react";
 import Link from "next/link";
-import { css } from "@emotion/core";
-
-let styles = {
-    nav: css`
-        display: flex;
-        list-style: none;
-        padding: 0;
-    `,
-    link: css`
-        color: red;
-        cursor: pointer;
-        font-weight: 600;
-        margin-right: 0.6em;
-        transition: color 120ms linear;
-        text-decoration: underline;
-
-        &:hover {
-            color: maroon;
-        }
-    `
-};
+import { linkCss, navCss } from "./link-list.styles";
 
 const LinkList = () => (
-    <ul css={styles.nav}>
+    <ul css={navCss}>
         <li>
             <a
-                css={styles.link}
+                css={linkCss}
                 href="https://github.com/volovar"
+                rel="noopener noreferrer"
                 target="_blank"
             >
                 github
@@ -35,8 +16,9 @@ const LinkList = () => (
         </li>
         <li>
             <a
-                css={styles.link}
+                css={linkCss}
                 href="https://dribbble.com/volovar"
+                rel="noopener noreferrer"
                 target="_blank"
             >
                 dribbble
@@ -44,8 +26,9 @@ const LinkList = () => (
         </li>
         <li>
             <a
-                css={styles.link}
+                css={linkCss}
                 href="https://twitter.com/volovar"
+                rel="noopener noreferrer"
                 target="_blank"
             >
                 twitter
@@ -53,7 +36,7 @@ const LinkList = () => (
         </li>
         <li>
             <Link href="/resume">
-                <a css={styles.link}>resume</a>
+                <a css={linkCss}>resume</a>
             </Link>
         </li>
     </ul>
