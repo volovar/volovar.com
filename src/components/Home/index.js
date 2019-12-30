@@ -23,14 +23,17 @@ const Home = () => (
                 <h2 css={headerCss}>{section.title}</h2>
 
                 <div css={containerCss}>
-                    {section.items.map((item, i) => (
-                        <ContentPreview
-                            href={item.url}
-                            description={item.description}
-                            title={item.title}
-                            key={`preview-${i}`}
-                        />
-                    ))}
+                    {section.items.map(
+                        ({ description, isHighlight, key, title, url }) => (
+                            <ContentPreview
+                                href={url}
+                                description={description}
+                                isHighlight={isHighlight}
+                                key={`preview-${key}`}
+                                title={title}
+                            />
+                        )
+                    )}
                 </div>
             </div>
         ))}

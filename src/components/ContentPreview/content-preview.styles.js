@@ -14,10 +14,10 @@ export const itemCss = css`
     &:hover {
         background: lightgrey;
     }
+`;
 
-    &:first-of-type {
-        grid-column: 1 / span 3;
-    }
+export const itemHighlightCss = css`
+    grid-column: 1 / span 3;
 `;
 
 export const titleCss = css`
