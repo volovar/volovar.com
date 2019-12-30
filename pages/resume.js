@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../src/components/Layout";
-import ResumeContent from "../src/components/Resume";
+import ResumeContent from "../src/components/ResumeContent";
 
 const Resume = () => (
     <Layout>
