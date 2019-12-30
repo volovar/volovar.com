@@ -4,6 +4,7 @@ export const descriptionCss = css`
     line-height: 1.4em;
     margin: 0;
 `;
+
 export const itemCss = css`
     background: transparent;
     border-bottom: 0.2rem solid lightgrey;
@@ -13,7 +14,12 @@ export const itemCss = css`
     &:hover {
         background: lightgrey;
     }
+
+    &:first-of-type {
+        grid-column: 1 / span 3;
+    }
 `;
+
 export const titleCss = css`
     margin: 0;
 `;
