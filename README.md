@@ -1,6 +1,39 @@
-volovar.com
+# volovar.com v7.0
+
 =================
 
-Currently on the 6th version.
+Updated October 2024. 7th iteration of volovar.com
 
-Updated March 2016. 6th iteration of volovar.com
+## Setup
+
+Make sure to install dependencies:
+
+```bash
+# npm
+npm install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+```
