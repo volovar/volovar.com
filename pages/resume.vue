@@ -1,4 +1,4 @@
 <template lang="pug">
-.content
-  slot
+div
+  h1 Resume
 </template>
